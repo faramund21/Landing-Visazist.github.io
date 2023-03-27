@@ -121,7 +121,7 @@ h3 {
 
 .adventages__item {
   list-style: none; /* Убираем исходные маркеры */
-  background: url(D:/landing-Kristina/source/img/checkgreen.png) no-repeat 0 0px; /* Параметры фона */
+  background: url(D:/landing-Kristina/source/img/checkgreen.svg) no-repeat 0 0px; /* Параметры фона */
   padding-left: 24px; /* Смещаем текст вправо */
 }
 
