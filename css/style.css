@@ -10,7 +10,7 @@ body {
 	font-weight: 400;
 	color: #333333;
 
-	background-color: white;
+	background-color: #ffffff;
 	background-position: top center;
 	background-repeat: no-repeat;
 }
@@ -119,8 +119,10 @@ h3 {
   color: #E84975;
 }
 
-.adventages-list {
-  list-style: none;
+.adventages__item {
+  list-style: none; /* Убираем исходные маркеры */
+  background: url(D:/landing-Kristina/source/img/checkgreen.png) no-repeat 0 0px; /* Параметры фона */
+  padding-left: 24px; /* Смещаем текст вправо */
 }
 
 .uslugi__time {
