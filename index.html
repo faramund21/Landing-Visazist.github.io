@@ -1,19 +1,608 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
 		<title>Визажист Цыбина Кристина Чита</title>
-		<link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" href="img/favicon.png" type="image/png">
+  </head>
 
-	</head>
+	<body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logo.png" width="136" height="" alt="Логотип Визажист Цыбина Кристина Чита">
+      </a>
+      <div class="header__map map visually-hidden">
+        <img src="img/mapicon.png" width="30" height="30" alt="Иконка карты">
+        <a class="map__link" href="https://www.2gis.ru">Показать на карте</a>
+        <b class="map__title">Адрес салона:<br>г. Чита, ул.Шилова, 95В</b>
+      </div>
+      <div class="header__mesenger mesenger visually-hidden">
+        <b class="mesenger__title">Задайте вопрос<br>я онлайн</b>
+        <ul class="mesenger__list">
+          <li class="mesenger__item">
+            <a class="mesenger__link mesenger__link--viber" href="https://www.viber.ru">
+              <img src="img/viber.png" width="30" height="30" alt="Я в Вибер">
+            </a>
+          </li>
+          <li class="mesenger__item">
+            <a class="mesenger__link mesenger__link--whatsapp" href="https://wa.me/79143563455">
+              <img src="img/whatsapp.png" width="30" height="30" alt="Я в Ватсап">
+            </a>
+          </li>
+          <li class="mesenger__item">
+            <a class="mesenger__link mesenger__link--telegram" href="https://www.telegram.ru">
+              <img src="img/telegram.png" width="30" height="30" alt="Я в Телеграм">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__phone phone visually-hidden">
+        <b class="phone__title">Звоните Пн-Вс: 9:00 - 22:00<br>+7 (914) 356-34-55</b>
+        <a class="button" href="tel:+79141292995">Обратный звонок</a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span>Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper visually-hidden">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="#main">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="#services">Услуги</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="#Portfolio">Портфолио</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="#questions">Вопрос-Ответ</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="#reserve">Запись</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="#reviews">Отзывы</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-	<body>
-    <p> Привет </p>
+    <main class="page-main">
+      <h1 class="visually-hidden">Визажист Цыбина Кристина Чита</h1>
+
+      <section class="first-screen">
+        <header class="first-screen__header">
+          <h2><span class="text-red">Макияж, </span>локоны,<br>брови в Чите</h2>
+          <p class="text-center">
+            Никаких <span class="text-red text-uppercase text-through">залаченных причесок и</span><br>
+            макияжа <span class="text-red text-uppercase text-through">с эффектом маски</span>
+          </p>
+          <a class="first-screen__foto">
+            <img src="img/foto1.png" width="250" height="" alt="Фото Визажист Цыбина Кристина Чита">
+          </a>
+      </section>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="adventages-list">
+            <li class="adventages__item adventages__item--price">
+              <img src="img/checkgreen.png" width="20" height="" alt="">
+              <p><span class="text-bold">Никаких наценок</span> за свадебный макияж</p>
+            </li>
+            <li class="adventages__item adventages__item--price--materials">
+              <img src="img/checkgreen.png" width="20" height="" alt="">
+              <p><span class="text-bold">Профессиональная</span> косметика и инструменты</p>
+            </li>
+            <li class="adventages__item adventages__item--price--time">
+              <img src="img/checkgreen.png" width="20" height="" alt="">
+              <p><span class="text-bold">12+ часов стоикости</span> макияжа и локонов</p>
+            </li>
+            <li class="adventages__item adventages__item--price--expirience">
+              <img src="img/checkgreen.png" width="20" height="" alt="">
+              <p><span class="text-bold">4+ лет опыта</span> в сфере красоты</p>
+            </li>
+          </ul>
+        <button class="button" type="button">
+          <span class="text-bold text-big">
+            Скидка 10%
+          </span>
+          <br>
+          при записи онлайн
+        </button>
+        <p class="first-screen__advice visually-hidden">
+          Ответьте на несколько вопросов<br>
+          и запишитесь на услугу, получив<br>
+          при  этом скидку 10%
+        </p>
+      </section>
+
+      <section class="quiz">
+        <h2>Оставьте заявку<br>
+        за <span class="text-red">15 секунд,</span> ответив<br>
+        всего на 5 вопросов</h2>
+        <p class="text-center">Это интересно и бесплатно!</p>
+
+        <form class="quiz__form" method="get" action="">
+          <fieldset>
+            <legend>Вопрос 1</legend>
+            <p>Что планируете сделать?</p>
+            <ul class="checkbox-list">
+              <li class="checkbox-item">
+                <input type="checkbox" name="makeup" id="filter-makeup">
+                <label for="filter-makeup">
+                Макияж
+                </label>
+              </li>
+              <li class="checkbox-item">
+                <input type="checkbox" name="browfix" id="filter-browfix">
+                <label for="filter-browfix">
+                Долговременная укладка бровей
+                </label>
+              </li>
+              <li class="checkbox-item">
+                <input type="checkbox" name="browcorrection" id="filter-browcorrection">
+                <label for="filter-browcorrection">
+                Коррекция бровей
+                </label>
+              </li>
+              <li class="checkbox-item">
+                <input type="checkbox" name="browpaint" id="filter-browpaint">
+                <label for="filter-browpaint">
+                Окрашивание бровей
+                </label>
+              </li>
+              <li class="checkbox-item">
+                <input type="checkbox" name="hair" id="filter-hair">
+                <label for="filter-hair">
+                Локоны
+                </label>
+              </li>
+              <li class="checkbox-item">
+                <input type="checkbox" name="kurs" id="filter-kurs">
+                <label for="filter-kurs">
+                Курс “Визаж для себя”
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Вопрос 2</legend>
+            <p>К какому мероприятию вы готовитесь?</p>
+            <ul class="radio-list">
+              <li class="radio-item">
+                <input type="radio" name="type-event" value="birthday" id="filter-birthday" checked>
+                <label for="filter-birthday">
+                День рождения
+                </label>
+              </li>
+              <li class="radio-item">
+                <input type="radio" name="type-event" value="mary" id="filter-mary">
+                <label for="filter-mary">
+                Свадьба
+                </label>
+              </li>
+              <li class="radio-item">
+                <input type="radio" name="type-event" value="corporative" id="filter-corporative">
+                <label for="filter-corporative">
+                Корпоратив
+                </label>
+              </li>
+              <li class="radio-item">
+                <input type="radio" name="type-event" value="foto" id="filter-foto">
+                <label for="filter-foto">
+                Фотосессия
+                </label>
+              </li>
+              <li class="radio-item">
+                <input type="radio" name="type-event" value="talking" id="filter-talking">
+                <label for="filter-talking">
+                Собеседование
+                </label>
+              </li>
+              <li class="radio-item">
+                <input type="radio" name="type-event" value="another" id="filter-another">
+                <label for="filter-another">
+                Другое
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="appointment-date">
+            <legend>Вопрос 3</legend>
+            <p>На какое число назначено мероприятие?</p>
+            <p>
+              <label class="visually-hidden for="appointment-date">Дата</label>
+              <input id="appointment-date" type="date" name="date" value="2023-03-23">
+            </p>
+          </fieldset>
+
+          <fieldset class="appointment-time">
+            <legend>Вопрос 4</legend>
+            <p>К какому времени надо быть готовой?</p>
+            <p>
+              <label class="visually-hidden for="appointment-time">Время</label>
+              <input id="appointment-time" type="time" name="time" value="09:30">
+            </p>
+          </fieldset>
+
+          <fieldset class="appointment-data">
+            <legend>Вопрос 5</legend>
+            <p>Давайте познакомимся?</p>
+            <p>
+              <label class="visually-hidden for="appointment-name">Имя</label>
+              <input id="appointment-name" type="text" name="name" placeholder="Имя">
+            </p>
+            <p>
+              <label class="visually-hidden for="appointment-phone">Телефон</label>
+              <input id="appointment-phone" type="tel" name="phone" placeholder="+7 123 4567890">
+            </p>
+          </fieldset>
+
+          <button class="button" type="submit">Отправить</button>
+          <p class="checkbox-policy">
+            <label>
+              <input type="checkbox" name="policyagree">
+              Согласен с условиями политики конфиденциальности данных
+            </label>
+          </p>
+        </form>
+      </section>
+
+      <section class="uslugi">
+        <h2>Мои услуги<br>для <span class="text-red">Вашей</span> красоты</h2>
+        <div class="uslugi__wrapper slider">
+          <ul class="uslugi-list slider__list">
+            <li class="uslugi__item uslugi__item--makeup slider-item">
+              <img src="img/1.png" width=100% height="" alt="">
+              <h3 class="uslugi__title">Макияж</h3>
+              <p class="uslugi__time">60-90 минут</p>
+              <p class="uslugi__price">1700 руб</p>
+              <button class="button" type="button">Записаться</button>
+            </li>
+            <li class="uslugi__item uslugi__item--hair slider-item">
+              <img src="img/2.png" width=100% height="" alt="">
+              <h3 class="uslugi__title">Локоны</h3>
+              <p class="uslugi__time">60-90 минут</p>
+              <p class="uslugi__price">1700 руб</p>
+              <button class="button" type="button">Записаться</button>
+            </li>
+            <li class="uslugi__item uslugi__item--browcorrection slider-item">
+              <img src="img/3.png" width=100% height="" alt="">
+              <h3 class="uslugi__title">Коррекция бровей</h3>
+              <p class="uslugi__time">60-90 минут</p>
+              <p class="uslugi__price">1700 руб</p>
+              <button class="button" type="button">Записаться</button>
+            </li>
+            <li class="uslugi__item uslugi__item--browfix slider-item">
+              <img src="img/4.png" width=100% height="" alt="">
+              <h3 class="uslugi__title">Долговременная укладка</h3>
+              <p class="uslugi__time">60-90 минут</p>
+              <p class="uslugi__price">1700 руб</p>
+              <button class="button" type="button">Записаться</button>
+            </li>
+            <li class="uslugi__item uslugi__item--browpaint slider-item">
+              <img src="img/5.png" width=100% height="" alt="">
+              <h3 class="uslugi__title">Окрашивание бровей</h3>
+              <p class="uslugi__time">60-90 минут</p>
+              <p class="uslugi__price">1700 руб</p>
+              <button class="button" type="button">Записаться</button>
+            </li>
+            <li class="uslugi__item uslugi__item--kurs slider-item">
+              <img src="img/6.png" width=100% height="" alt="">
+              <h3 class="uslugi__title">Курс "Визаж для себя"</h3>
+              <p class="uslugi__time">60-90 минут</p>
+              <p class="uslugi__price">1700 руб</p>
+              <button class="button" type="button">Записаться</button>
+            </li>
+          </ul>
+          <p class="uslugi__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle" type="button">4</button>
+            <button class="slider__toggle" type="button">5</button>
+            <button class="slider__toggle" type="button">6</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="examples">
+        <h2>Более <span class="text-red">300</span><br>довольных клиентов</h2>
+        <div class="examples__wrapper slider">
+          <ul class="examples-list slider__list">
+            <li class="examples__item examples__item--1 slider-item">
+              <img src="img/1/1.png" width=100% height="" alt="">
+              <img src="img/1/2.png" width="60" height="" alt="">
+              <img src="img/1/3.png" width="60" height="" alt="">
+              <img src="img/1/4.png" width="60" height="" alt="">
+              <img src="img/1/5.png" width="60" height="" alt="">
+              <h3 class="examples__title">Название работы</h3>
+              <p class="examples__description">Описание работы - цена - сроки - место выполнения (проведения) можно добавить еще и отзыв клиенты или видеообзор сюда</p>
+            </li>
+          </ul>
+          <p class="examples__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle" type="button">4</button>
+            <button class="slider__toggle" type="button">5</button>
+            <button class="slider__toggle" type="button">6</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="questions">
+        <h2>Часто задаваемые<br>вопросы</h2>
+        <h3>и ответы на них</h3>
+        <ul class="questions-list">
+          <li class="questions__item">
+            <h3 class="questions__question">Сколько занимает макияж по времени?</h3>
+            <img src="img/direct.png" width="15" height="" alt="">
+            <p class="questions__answer visually-hidden">Я оставляю для работы полтора часа про запас. Это не значит, что макияж всегда занимает столько времени, можно уложиться и в 50 минут - 1 час. Всегда следует учитывать сложность макияжа, пожелания клиента, состояние кожи, кто-то сидит спокойно, а кто-то постоянно отвлекается на телефон…</p>
+          </li>
+          <li class="questions__item">
+            <h3 class="questions__question">Как долго продержится макияж?</h3>
+            <img src="img/direct.png" width="15" height="" alt="">
+            <p class="questions__answer">Качественная профессиональная косметика, используемая в работе, и нанесение данной косметике в правильной последовательности и нужном количестве гарантируют стойкость макияжа в течении всего мероприятия.</p>
+          </li>
+          <li class="questions__item">
+            <h3 class="questions__question">Как подготовиться к макияжу?</h3>
+            <img src="img/direct.png" width="15" height="" alt="">
+            <p class="questions__answer visually-hidden">Не стоит делать чистку лица, пользоваться автозагаром, пить много жидкости за день/ночь перед макияжем. Увлажните кожу и постарайтесь отдохнуть.</p>
+          </li>
+          <li class="questions__item">
+            <h3 class="questions__question">Нужна ли базы под макияж или достаточно просто ухода перед нанесением тона?</h3>
+            <img src="img/direct.png" width="15" height="" alt="">
+            <p class="questions__answer visually-hidden">База нужна не всем. Есть универсальные средства 2 в 1 (уход и основа под макияж). Понять нужна ли вам база, можно после нанесения тонального средства. Например, если визуально вам хочется чего-то большего - скрыть расширенные поры, красноту, придать матовость, добавить сияния кожи - тогда следует использовать базу.</p>
+          </li>
+          <li class="questions__item">
+            <h3 class="questions__question">Не будет ли тон заметен на коже, не будет ли смотреться неестественно?</h3>
+            <img src="img/direct.png" width="15" height="" alt="">
+            <p class="questions__answer visually-hidden">Не будет! Если кожа правильно подготовлена перед нанесением макияжа и верно подобран тон с учетом типа и состояния кожи.</p>
+          </li>
+          <li class="questions__item">
+            <h3 class="questions__question">Что делать если переборщили с тоном (консилером)?</h3>
+            <img src="img/direct.png" width="15" height="" alt="">
+            <p class="questions__answer visually-hidden">Если переборщили с тоном - можно взять спонж для тона или сухую кисть для нанесения тона, промакнуть излишки тонального крема (консилера) или воспользоваться ватной палочкой и подкручивающими движениями пройтись по той зоне, где необходимо убрать излишки средства.</p>
+          </li>
+          <li class="questions__item">
+            <h3 class="questions__question">Как покрасить брови максимально натурально?</h3>
+            <img src="img/direct.png" width="15" height="" alt="">
+            <p class="questions__answer visually-hidden">Не следует красить брови полностью. Покрасьте только там, где есть проблемы или не хватает интенсивности цвета. После этого причешите волоски, уложив их в нужном направлении. Закрепите брови фиксирующим гелем, чтобы сделать брови объемнее. Оттенок краски выбирайте в тон оттенка волосков.</p>
+          </li>
+          <li class="questions__item">
+            <h3 class="questions__question">Есть ли смысл в фиксирующем спрее для макияжа?</h3>
+            <img src="img/direct.png" width="15" height="" alt="">
+            <p class="questions__answer visually-hidden">Смысл есть! Он продлевает стойкость и свежесть макияжа на определенное количество времени, которое зависит от типа кожи и времени года. Еще одно преимущество такого спрея - это способность смешивает на лице кремовые и сухие текстуры, то есть усаживать макияж, делая его более сбалансированным.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="ask-questions">
+        <h2 class="text-uppercase text-red text-underline text-low">Задайте свой вопрос:</h2>
+        <form class="ask-questions__form" method="post" action="">
+          <p>
+            <label class="visually-hidden for="ask-questions__name user-name">Имя</label>
+            <input id="user-name" type="text" name="name" placeholder="Имя">
+          </p>
+          <p>
+            <label class="visually-hidden for="ask-questions__phone user-phone">Телефон</label>
+            <input id="user-phone" type="tel" name="phone" placeholder="Телефон">
+          </p>
+          <p>
+            <label class="visually-hidden for="ask-questions__question user-question">Ваш вопрос</label>
+            <input id="user-question" type="text" name="question" placeholder="Ваш вопрос">
+          </p>
+          <button class="button" type="submit">Отправиить</button>
+          <p class="checkbox-policy">
+            <label>
+              <input type="checkbox" name="policyagree">
+              Согласен с условиями политики конфиденциальности данных
+            </label>
+          </p>
+        </form>
+        <div class="ask-questions__mesenger mesenger">
+          <h3 class="mesenger__title">или напишите мне онлайн</h3>
+          <ul class="mesenger__list">
+            <li class="mesenger__item">
+              <a class="mesenger__link mesenger__link--viber" href="https://www.viber.ru">
+                <img src="img/viber.png" width="60" height="60" alt="Я в Вибер">
+              </a>
+            </li>
+            <li class="mesenger__item">
+              <a class="mesenger__link mesenger__link--whatsapp" href="https://wa.me/79143563455">
+                <img src="img/whatsapp.png" width="60" height="60" alt="Я в Ватсап">
+              </a>
+            </li>
+            <li class="mesenger__item">
+              <a class="mesenger__link mesenger__link--telegram" href="https://www.telegram.ru">
+                <img src="img/telegram.png" width="60" height="60" alt="Я в Телеграм">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="whatsapp-hand">
+        <a class="first-screen__foto">
+          <img src="img/foto2.png" width="186" height="" alt="Фото Визажист Цыбина Кристина Чита">
+        </a>
+        <h2>Давайте начистоту:</h2>
+        <h3 class="whatsapp-hand__description">
+          чтобы узнать стоимость<br>
+          и записаться необходимо ответить<br>
+          всего <span class="text-red">на 4 вопроса</span><br><br>
+          Можем  начать с переписки<br>
+          в WhatsApp, это <span class="text-red text-uppercase">удобно</span> и <span class="text-red text-uppercase">быстро</span>
+        </h3>
+        <button class="button" type="button">написать в whatsapp</button>
+        <img src="img/whatsapp.png" width="50" height="50" alt="Я в Ватсап">
+      </section>
+
+      <section class="reviews">
+        <h2>Мне важно<br><span class="text-red text-uppercase">ваше</span> мнение!</h2>
+        <h3 class="reviews__description">посмотрите отзывы моих клиентов</h3>
+        <div class="reviews__wrapper slider">
+          <ul class="reviews-list slider__list">
+            <li class="reviews__item reviews__item--1 slider-item">
+              <a class="reviews__foto">
+                <img src="img/reviews/1.png" width=100% height="" alt="Отзыв Визажист Цыбина Кристина Чита">
+              </a>
+            </li>
+          </ul>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle" type="button">4</button>
+            <button class="slider__toggle" type="button">5</button>
+            <button class="slider__toggle" type="button">6</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="request">
+        <a class="first-screen__foto">
+          <img src="img/foto3.png" width="256" height="" alt="Фото Визажист Цыбина Кристина Чита">
+        </a>
+        <h2>Получите консультацию<br><span class="text-uppercase text-red">бесплатно</span></h2>
+        <h3 class="request__description">
+          В какое время вам позвонить?
+        </h3>
+        <form class="request__form" method="post" action="">
+           <p>
+            <label class="visually-hidden" for="request__time user-time">Время</label>
+            <input id="user-time" type="time" name="time" value="15:00">
+          </p>
+          <p>
+            <label class="visually-hidden" for="request__name user-name">Имя</label>
+            <input id="user-name" type="text" name="name" placeholder="Имя">
+          </p>
+          <p>
+            <label class="visually-hidden" for="request__phone user-phone">Телефон</label>
+            <input id="user-phone" type="text" name="phone" placeholder="Телефон">
+          </p>
+          <p class="checkbox-policy">
+            <label>
+              <input type="checkbox" name="policyagree">
+              Согласен с условиями политики конфиденциальности данных
+            </label>
+          </p>
+          <button class="button" type="submit">Обратный звонок</button>
+        </form>
+        <div class="request__mesenger mesenger">
+          <h3 class="mesenger__title">или напишите мне онлайн</h3>
+          <ul class="mesenger__list">
+            <li class="mesenger__item">
+              <a class="mesenger__link mesenger__link--viber" href="https://www.viber.ru">
+                <img src="img/viber.png" width="60" height="60" alt="Я в Вибер">
+              </a>
+            </li>
+            <li class="mesenger__item">
+              <a class="mesenger__link mesenger__link--whatsapp" href="https://wa.me/79143563455">
+                <img src="img/whatsapp.png" width="60" height="60" alt="Я в Ватсап">
+              </a>
+            </li>
+            <li class="mesenger__item">
+              <a class="mesenger__link mesenger__link--telegram" href="https://www.telegram.ru">
+                <img src="img/telegram.png" width="60" height="60" alt="Я в Телеграм">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <h2 class="page-footer__title">Я жду вас!</h2>
+      <h3 class="contacts__title">Со мной можно связаться</h3>
+      <div class="page-footer__contacts contacts">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <img src="img/point-icon.svg" width="20" height="" alt="Адрес студии">
+            <p class="contacts__item--adress">г. Чита, ул.Шилова, 95В (р-н Макси)</p>
+          </li>
+          <li class="contacts__item">
+            <img src="img/clock-icon.png" width="20" height="" alt="Время работы">
+            <p class="contacts__item--worktime">Пн-Вс: 8:00 - 22:00</p>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__item--cellphone" href="tel:+79143563455">
+              <img src="img/phone-icon.png" width="20" height="" alt="Телефон">
+              <span class="contacts__item--cellphone">+7 (914) 356-34-55</span>
+            </a>
+          </li>
+          <li class="contacts__item">
+             <img src="img/email-icon.png" width="20" height="" alt="Электронная почта">
+             <a class="contacts__item--email" href="unona_28@rambler.ru">Unona_28@rambler.ru</a>
+          </li>
+        </ul>
+        <div class="contacts__mesenger mesenger">
+          <h3 class="mesenger__title">Задайте<br>вопрос онлайн</h3>
+          <ul class="mesenger__list">
+            <li class="mesenger__item">
+              <a class="mesenger__link mesenger__link--viber" href="https://www.viber.ru">
+                <img src="img/viber.png" width="30" height="30" alt="Я в Вибер">
+              </a>
+            </li>
+            <li class="mesenger__item">
+              <a class="mesenger__link mesenger__link--whatsapp" href="https://wa.me/79143563455">
+                <img src="img/whatsapp.png" width="30" height="30" alt="Я в Ватсап">
+              </a>
+            </li>
+            <li class="mesenger__item">
+              <a class="mesenger__link mesenger__link--telegram" href="https://www.telegram.ru">
+                <img src="img/telegram.png" width="30" height="30" alt="Я в Телеграм">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="request__social social">
+          <h3 class="social__title">Я в соцсетях</h3>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--VKontact" href="https://www.vkontact.ru">
+                <img src="img/vk.png" width="30" height="30" alt="Я во Вконтакте">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instgram" href="https://www.instagram.com">
+                <img src="img/instagram.png" width="30" height="30" alt="Я в Интсаграм">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__salon salon">
+        <h3 class="salon__title">До встречи в студии</h3>
+        <a class="salon__foto">
+          <img src="img/foto-studio.png" width=100% height="" alt="Фото салона красоты Чита">
+        </a>
+      </div>
+      <div class="page-footer__map map">
+        <h3 class="map__title">Расположение студии</h3>
+        <a class="map__foto">
+          <img src="img/foto-map.png" width=100% height="" alt="Студия красоты Светланы Соловьевой по адресу ул. Шилова 95В">
+          <img src="img/point-icon-red.svg" width="30" height="" alt="Маркер">
+        </a>
+        <button class="button" type="button">Посмотреть схему проезда</button>
+      </div>
+      <div class="page-footer__common common">
+        <p class="footer__left">Все права защищены</p>
+        <p class="footer__right">Политика конфиденциальности</p>
+      </div>
+    </footer>
 
 		<!-- <script src="js/map.js"></script> -->
 		<!-- <script src="js/progress-bar.js"></script> -->
-
 	</body>
 </html>
