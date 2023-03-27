@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 	<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Визажист Цыбина Кристина Чита</title>
     <link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -10,43 +11,48 @@
 
 	<body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logo.png" width="136" height="" alt="Логотип Визажист Цыбина Кристина Чита">
-      </a>
-      <div class="header__map map visually-hidden">
-        <img src="img/mapicon.png" width="30" height="30" alt="Иконка карты">
-        <a class="map__link" href="https://www.2gis.ru">Показать на карте</a>
-        <b class="map__title">Адрес салона:<br>г. Чита, ул.Шилова, 95В</b>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="img/logo.png" width="136" height="" alt="Логотип Визажист Цыбина Кристина Чита">
+        </a>
+        <div class="header__map map visually-hidden">
+          <img src="img/mapicon.png" width="30" height="30" alt="Иконка карты">
+          <a class="map__link" href="https://www.2gis.ru">Показать на карте</a>
+          <b class="map__title">Адрес салона:<br>г. Чита, ул.Шилова, 95В</b>
+        </div>
+        <div class="header__mesenger mesenger visually-hidden">
+          <b class="mesenger__title">Задайте вопрос<br>я онлайн</b>
+          <ul class="mesenger__list">
+            <li class="mesenger__item">
+              <a class="mesenger__link mesenger__link--viber" href="https://www.viber.ru">
+                <img src="img/viber.png" width="30" height="30" alt="Я в Вибер">
+              </a>
+            </li>
+            <li class="mesenger__item">
+              <a class="mesenger__link mesenger__link--whatsapp" href="https://wa.me/79143563455">
+                <img src="img/whatsapp.png" width="30" height="30" alt="Я в Ватсап">
+              </a>
+            </li>
+            <li class="mesenger__item">
+              <a class="mesenger__link mesenger__link--telegram" href="https://www.telegram.ru">
+                <img src="img/telegram.png" width="30" height="30" alt="Я в Телеграм">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__phone phone visually-hidden">
+          <b class="phone__title">Звоните Пн-Вс: 9:00 - 22:00<br>+7 (914) 356-34-55</b>
+          <a class="button" href="tel:+79141292995">Обратный звонок</a>
+        </div>
+        <!-- <button class="main-nav__toggle" type="button"> -->
+            <!-- <img src="img/menu.svg" width="31" height="17" alt="кнопка открыть меню"> -->
+        <!-- </button> -->
+        <a class="main-nav__toggle" href="">
+          <img src="img/menu.svg" width="31" height="17" alt="кнопка открыть меню">
+        </a>
       </div>
-      <div class="header__mesenger mesenger visually-hidden">
-        <b class="mesenger__title">Задайте вопрос<br>я онлайн</b>
-        <ul class="mesenger__list">
-          <li class="mesenger__item">
-            <a class="mesenger__link mesenger__link--viber" href="https://www.viber.ru">
-              <img src="img/viber.png" width="30" height="30" alt="Я в Вибер">
-            </a>
-          </li>
-          <li class="mesenger__item">
-            <a class="mesenger__link mesenger__link--whatsapp" href="https://wa.me/79143563455">
-              <img src="img/whatsapp.png" width="30" height="30" alt="Я в Ватсап">
-            </a>
-          </li>
-          <li class="mesenger__item">
-            <a class="mesenger__link mesenger__link--telegram" href="https://www.telegram.ru">
-              <img src="img/telegram.png" width="30" height="30" alt="Я в Телеграм">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="header__phone phone visually-hidden">
-        <b class="phone__title">Звоните Пн-Вс: 9:00 - 22:00<br>+7 (914) 356-34-55</b>
-        <a class="button" href="tel:+79141292995">Обратный звонок</a>
-      </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span>Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper visually-hidden">
+      <nav class="main-nav visually-hidden">
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a href="#main">Главная</a>
@@ -78,31 +84,44 @@
       <h1 class="visually-hidden">Визажист Цыбина Кристина Чита</h1>
 
       <section class="first-screen">
-        <header class="first-screen__header">
-          <h2><span class="text-red">Макияж, </span>локоны,<br>брови в Чите</h2>
-          <p class="text-center">
-            Никаких <span class="text-red text-uppercase text-through">залаченных причесок и</span><br>
+        <div class="first-screen__header">
+          <h2><span class="text-red first-screen__offer">Макияж, </span>локоны,<br>брови в Чите</h2>
+          <p class="text-center first-screen__offer">
+            Никаких <span class="text-red text-uppercase text-through">залаченных причесок</span> и<br>
             макияжа <span class="text-red text-uppercase text-through">с эффектом маски</span>
           </p>
-          <a class="first-screen__foto">
+          <div class="first-screen__foto">
             <img src="img/foto1.png" width="250" height="" alt="Фото Визажист Цыбина Кристина Чита">
-          </a>
+          </div>
+        </div>
       </section>
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
           <ul class="adventages-list">
             <li class="adventages__item adventages__item--price">
-              <p><span class="text-bold">Никаких наценок</span> за свадебный макияж</p>
+              <div class="advantages__foto">
+                <img src="img/checkgreen.svg" width="20" height="" alt="">
+              </div>
+              <p class="advantages__description"><span class="text-bold">Никаких наценок</span> за свадебный макияж</p>
             </li>
             <li class="adventages__item adventages__item--price--materials">
-              <p><span class="text-bold">Профессиональная</span> косметика и инструменты</p>
+              <div class="advantages__foto">
+                <img src="img/checkgreen.svg" width="20" height="" alt="">
+              </div>
+              <p class="advantages__description"><span class="text-bold">Профессиональная</span> косметика и инструменты</p>
             </li>
             <li class="adventages__item adventages__item--price--time">
-              <p><span class="text-bold">12+ часов стоикости</span> макияжа и локонов</p>
+              <div class="advantages__foto">
+                <img src="img/checkgreen.svg" width="20" height="" alt="">
+              </div>
+              <p class="advantages__description"><span class="text-bold">12+ часов стоикости</span> макияжа и локонов</p>
             </li>
             <li class="adventages__item adventages__item--price--expirience">
-              <p><span class="text-bold">4+ лет опыта</span> в сфере красоты</p>
+              <div class="advantages__foto">
+                <img src="img/checkgreen.svg" width="20" height="" alt="">
+              </div>
+              <p class="advantages__description"><span class="text-bold">4+ лет опыта</span> в сфере красоты</p>
             </li>
           </ul>
         <button class="button" type="button">

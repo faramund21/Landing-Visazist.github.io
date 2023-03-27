@@ -1,6 +1,6 @@
 body {
 
-  width: 320px;
+  width: 100%;
   margin: 0;
 	padding: 0;
 
@@ -29,6 +29,7 @@ h2 {
   font-size: 24px;
 	line-height: 31px;
   font-weight: 700;
+  margin: 0;
 }
 
 h3 {
@@ -64,17 +65,6 @@ h3 {
   background-color: #621A2E;
 }
 
-/* .page-header { */
-  /* margin-bottom: 20px; */
-
-  /* min-height: 44px; */
-/* } */
-
-/* .page-header__logo { */
-  /* width: 136px; */
-  /* height: 44px; */
-/* } */
-
 .ask-questions__form input,
 .request__form input,
 .appointment-data input,
@@ -95,7 +85,6 @@ h3 {
   font-size: 14px;
   line-height: 20px;
 
-
   background-color: white;
 }
 
@@ -103,12 +92,15 @@ h3 {
   background-color: #5A433B;
 }
 
+.adventages-list,
 .mesenger__list,
 .site-list,
 .checkbox-list,
 .radio-list,
 .slider__list {
   list-style: none;
+  margin-left: 0;
+  padding: 0;
 }
 
 .main-nav__wrapper a{
@@ -120,10 +112,10 @@ h3 {
   color: #E84975;
 }
 
-.adventages__item {
-  list-style: none; /* Убираем исходные маркеры */
-  background: url(D:/landing-Kristina/source/img/checkgreen.svg) no-repeat 0 0px; /* Параметры фона */
-  padding-left: 24px; /* Смещаем текст вправо */
+.adventages-list {
+  list-style: none;
+
+  font-size: 12px;
 }
 
 .uslugi__time {
@@ -206,6 +198,195 @@ h3 {
   font-size: 20px;
 }
 
+/* Сеточные стили */
+
+
+/* body { */
+  /* min-width: 360px; */
+  /* background-image: url("D:/landing-Kristina/source/img/landing360.png"); */
+  /* background-repeat: no-repeat; */
+/* } */
+
+.page-header {
+  width: 100%;
+}
+
+.page-header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+.page-header__logo {
+  width: 136px;
+  height: 32px;
+
+  margin: 0;
+  padding: 0;
+
+  /* display: block; */
+}
+
+.main-nav__toggle {
+  width: 31px;
+  height: 17px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.page-main {
+  width: 100%;
+}
+
+.first-screen {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 0px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+.first-screen__offer {
+  margin-bottom: 25px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first-screen__foto {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 25px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+.adventages__item {
+  display: flex;
+  align-items: center;
+}
+
+.advantages__foto {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.advantages__description {
+  display: flex;
+  margin-right: 10px;
+  margin-left: 0;
+
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+.uslugi {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+.examples {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+.ask-questions {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+.whatsapp-hand {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+.request {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
 
 
 /* Позиционирование */
