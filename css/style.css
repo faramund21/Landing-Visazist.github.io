@@ -57,7 +57,7 @@ h3 {
   height: 66px;
 
   margin-top: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .button:hover,
@@ -123,7 +123,7 @@ h3 {
   font-size: 12px;
 }
 
-.uslugi__time {
+.services__time {
   color: #A72146;
   font-weight: 700;
   text-decoration-line: underline;
@@ -131,7 +131,7 @@ h3 {
   text-align: left;
 }
 
-.uslugi__price {
+.services__price {
   color: #A72146;
   font-weight: 700;
   text-decoration-line: underline;
@@ -203,14 +203,9 @@ h3 {
   font-size: 20px;
 }
 
-/* Сеточные стили */
+/* СЕТОЧНЫЕ СТИЛИ */
 
-
-/* body { */
-  /* min-width: 360px; */
-  /* background-image: url("D:/landing-Kristina/source/img/landing360.png"); */
-  /* background-repeat: no-repeat; */
-/* } */
+/* Хэдэр */
 
 .page-header {
   width: 100%;
@@ -221,7 +216,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
 
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -232,6 +227,8 @@ h3 {
   margin: 0;
   padding: 0;
 }
+
+/* Навигация */
 
 .main-nav__toggle {
   width: 31px;
@@ -245,12 +242,14 @@ h3 {
   width: 100%;
 }
 
+/* Первый экран */
+
 .first-screen {
   display: flex;
   flex-direction: column;
 
   margin-bottom: 0px;
-  margin-top: 25px;
+  margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
   width: 320px;
@@ -267,6 +266,8 @@ h3 {
   display: flex;
   justify-content: center;
 }
+
+/* Преимущества */
 
 .advantages {
   display: flex;
@@ -300,6 +301,8 @@ h3 {
   margin-top: 5px;
 }
 
+/* Вопросы квиза */
+
 .quiz {
   display: flex;
   flex-direction: column;
@@ -310,8 +313,21 @@ h3 {
   margin-right: auto;
   width: 320px;
 }
-/* Слайды с услугами */
-.uslugi {
+
+.checkbox-policy {
+  margin:0;
+}
+
+.checkbox-policy__wrapper {
+  font-size: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Мои услуги */
+
+.services {
   display: flex;
   flex-direction: column;
 
@@ -322,13 +338,12 @@ h3 {
   width: 320px;
 }
 
-.uslugi__wrapper {
+.services__wrapper {
   display: flex;
   flex-direction: column;
-  /* align-items: start; */
 }
 
-.uslugi__description {
+.services__description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -336,19 +351,19 @@ h3 {
   padding: 0;
 }
 
-.uslugi__title {
+.services__title {
   margin: 0;
   padding: 0;
 }
 
-.uslugi__time,
-.uslugi__price {
+.services__time,
+.services__price {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 0;
 }
 
-.uslugi__toggles,
+.services__toggles,
 .examples__toggles {
   display: flex;
   margin-top: 0;
@@ -357,16 +372,19 @@ h3 {
   margin-right: auto;
   padding: 0;
 }
+
 .slider__toggle {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-/* .examples { */
-  /* width: 100%; */
-/* } */
+.sliderv {
+  margin-bottom: 0;
+}
 
-.examples__wrapper {
+/* Примеры работ */
+
+.examples {
   display: flex;
   flex-direction: column;
 
@@ -385,27 +403,71 @@ h3 {
   padding: 0;
 }
 
+.examples__description {
+  margin-bottom: 0;
+}
+
+/* Вопросы и ответы */
+
 .questions {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   margin-bottom: 25px;
-  margin-top: 25px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 320px;
 }
+
+.questions__item {
+  margin-bottom: 10px;
+}
+
+.question-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.questions__triangle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.questions__question {
+  margin-left: 15px;
+}
+
+.questions__answer {
+  margin-bottom: 0;
+  margin-top:0;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding-bottom: 15px;
+}
+
+/* Задайте свой вопрос */\
 
 .ask-questions {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  /* align-items: center; */
 
-  margin-bottom: 25px;
-  margin-top: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
+  /* margin-bottom: 25px; */
+  /* margin-top: 25px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* width: 20px; */
 }
+
+/* Ватсап рука */
 
 .whatsapp-hand {
   display: flex;
