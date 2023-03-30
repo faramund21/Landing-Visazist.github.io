@@ -60,6 +60,11 @@ h3 {
   margin-bottom: 10px;
 }
 
+.mesenger__title,
+.social__title {
+  text-align: center;
+}
+
 .button:hover,
 .button:focus {
   background-color: #E84975;
@@ -75,6 +80,7 @@ h3 {
 .appointment-date input,
 .appointment-time input {
   font: inherit;
+  font-size: 16px;
 
   text-align: left;
   color: #828282;
@@ -151,6 +157,8 @@ h3 {
 .contacts__list,
 .social__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__left {
@@ -313,6 +321,14 @@ h3 {
   margin-right: auto;
   width: 320px;
 }
+.quiz-input {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 57px;
+}
 
 .checkbox-policy {
   margin:0;
@@ -364,12 +380,12 @@ h3 {
 }
 
 .services__toggles,
-.examples__toggles {
+.examples__toggles,
+.reviews__toggles {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
   padding: 0;
 }
 
@@ -453,18 +469,44 @@ h3 {
   padding-bottom: 15px;
 }
 
-/* Задайте свой вопрос */\
+/* Задайте свой вопрос */
 
 .ask-questions {
   display: flex;
-  /* flex-direction: column; */
-  /* align-items: center; */
+  flex-direction: column;
+  align-items: center;
 
-  /* margin-bottom: 25px; */
-  /* margin-top: 25px; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-  /* width: 20px; */
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+.ask-questions__name,
+.ask-questions__phone {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 57px;
+}
+
+.ask-questions__question {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  width: 100%;
+  min-height: 145px;
+}
+
+.mesenger__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 /* Ватсап рука */
@@ -480,6 +522,8 @@ h3 {
   width: 320px;
 }
 
+/* Отзывы */
+
 .reviews {
   display: flex;
   flex-direction: column;
@@ -491,9 +535,12 @@ h3 {
   width: 320px;
 }
 
+/* Консультация */
+
 .request {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   margin-bottom: 25px;
   margin-top: 25px;
@@ -502,6 +549,109 @@ h3 {
   width: 320px;
 }
 
+.request__time,
+.request__name,
+.request__phone {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  width: 100%;
+  box-sizing: border-box;
+  height: 57px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 0;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 100%;
+  box-sizing: border-box;
+  padding:20px;
+}
+
+.mesenger-social-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__item {
+  display: flex;
+  /* flex-direction: column; */
+
+  margin-bottom: 25px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+}
+
+.contact__description {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+.page-footer__salon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.underground {
+  width: 100%;
+  background: #838383;
+}
+
+.page-footer__common {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+
+  color: #ffffff;
+}
+
+.footer__left,
+.footer__right {
+  margin: 0;
+  padding: 0;
+}
 
 /* Позиционирование */
 /* Блочная модель */
