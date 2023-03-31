@@ -538,7 +538,7 @@ details > summary {
 }
 
 summary:before {
-  content: url(https://github.com/faramund21/Landing-Visazist.github.io/blob/main/img/triangle.png);
+  content: url(https://faramund21.github.io/Landing-Visazist.github.io/img/triangle.png);
   margin: -5px 5px 0 0;
   position: absolute;
   top: 25px;
@@ -546,7 +546,7 @@ summary:before {
 }
 
 details[open] summary:before {
-   content: url(https://github.com/faramund21/Landing-Visazist.github.io/blob/main/img/triangle180.png);
+   content: url(https://faramund21.github.io/Landing-Visazist.github.io/img/triangle180.png);
 }
 
 
