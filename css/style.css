@@ -773,6 +773,12 @@ h3 {
   right: 140px;
 }
 
+.button__map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer__left,
 .footer__right {
   margin: 0;
