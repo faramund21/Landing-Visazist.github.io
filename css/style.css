@@ -15,6 +15,14 @@ body {
 	background-repeat: no-repeat;
 }
 
+html, body {
+  /* Убирает прокрутку по горизонтале, для мобильной версии */
+  overflow-x: hidden;
+}
+
+
+
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="ratio"].visually-hidden {
@@ -548,6 +556,14 @@ h3 {
   height: 57px;
 }
 
+.question-input {
+  margin-bottom: 10px;
+}
+
+.question-input input::placeholder {
+  transform: translateY(-40px);
+}
+
 .ask-questions__question {
   padding-left: 20px;
   padding-right: 20px;
@@ -769,5 +785,3 @@ h3 {
 /* Оформление */
 /* Анимация */
 /* Разное */
-
-
