@@ -549,6 +549,9 @@ details[open] summary:before {
    content: url(https://faramund21.github.io/Landing-Visazist.github.io/img/triangle180.png);
 }
 
+details summary::-webkit-details-marker {
+  display:none;
+}
 
 
 /* details > div { */
