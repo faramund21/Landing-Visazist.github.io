@@ -71,6 +71,7 @@ h3 {
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
+  box-shadow: 0 3px 3px #2B0D15;
 
   background-color: #A72146;
   border: none;
@@ -98,6 +99,7 @@ h3 {
 }
 
 .ask-questions__form input,
+.ask-questions__form textarea,
 .request__form input,
 .appointment-data input,
 .appointment-date input,
@@ -526,14 +528,9 @@ details > summary {
   font-weight: 700;
   width: 80%;
 
-  /* padding: 5px; */
   padding-bottom: 16px;
   padding-top: 16px;
   padding-left: 15px;
-  /* background-color: #eee; */
-  /* color: #333; */
-  /* border: 1px #ccc solid; */
-  /* cursor: pointer; */
   list-style: none;
 }
 
@@ -602,31 +599,21 @@ details summary::-webkit-details-marker {
   width: 320px;
 }
 
+.ask-questions__question,
 .ask-questions__name,
 .ask-questions__phone {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
   box-sizing: border-box;
 
   width: 100%;
   height: 57px;
 }
 
-.question-input {
-  margin-bottom: 10px;
-}
-
-.question-input input::placeholder {
-  transform: translateY(-40px);
-}
-
-.ask-questions__question {
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
-
-  width: 100%;
+textarea.ask-questions__question {
   min-height: 145px;
+  resize: vertical;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
 .mesenger__list {
