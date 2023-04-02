@@ -138,143 +138,6 @@
         </div>
       </section>
 
-      <section class="quiz">
-        <h2>Оставьте заявку<br>
-        за <span class="text-red">15 секунд,</span> ответив<br>
-        всего на 5 вопросов</h2>
-        <p class="text-center">Это интересно и бесплатно!</p>
-
-        <form class="quiz__form" method="get" action="">
-          <fieldset>
-            <legend>Вопрос 1</legend>
-            <p>Что планируете сделать?</p>
-            <ul class="checkbox-list">
-              <li class="checkbox-item">
-                <input type="checkbox" name="makeup" id="filter-makeup">
-                <label for="filter-makeup">
-                Макияж
-                </label>
-              </li>
-              <li class="checkbox-item">
-                <input type="checkbox" name="browfix" id="filter-browfix">
-                <label for="filter-browfix">
-                Долговременная укладка бровей
-                </label>
-              </li>
-              <li class="checkbox-item">
-                <input type="checkbox" name="browcorrection" id="filter-browcorrection">
-                <label for="filter-browcorrection">
-                Коррекция бровей
-                </label>
-              </li>
-              <li class="checkbox-item">
-                <input type="checkbox" name="browpaint" id="filter-browpaint">
-                <label for="filter-browpaint">
-                Окрашивание бровей
-                </label>
-              </li>
-              <li class="checkbox-item">
-                <input type="checkbox" name="hair" id="filter-hair">
-                <label for="filter-hair">
-                Локоны
-                </label>
-              </li>
-              <li class="checkbox-item">
-                <input type="checkbox" name="kurs" id="filter-kurs">
-                <label for="filter-kurs">
-                Курс “Визаж для себя”
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset>
-            <legend>Вопрос 2</legend>
-            <p>К какому мероприятию вы готовитесь?</p>
-            <ul class="radio-list">
-              <li class="radio-item">
-                <input type="radio" name="type-event" value="birthday" id="filter-birthday" checked>
-                <label for="filter-birthday">
-                День рождения
-                </label>
-              </li>
-              <li class="radio-item">
-                <input type="radio" name="type-event" value="mary" id="filter-mary">
-                <label for="filter-mary">
-                Свадьба
-                </label>
-              </li>
-              <li class="radio-item">
-                <input type="radio" name="type-event" value="corporative" id="filter-corporative">
-                <label for="filter-corporative">
-                Корпоратив
-                </label>
-              </li>
-              <li class="radio-item">
-                <input type="radio" name="type-event" value="foto" id="filter-foto">
-                <label for="filter-foto">
-                Фотосессия
-                </label>
-              </li>
-              <li class="radio-item">
-                <input type="radio" name="type-event" value="talking" id="filter-talking">
-                <label for="filter-talking">
-                Собеседование
-                </label>
-              </li>
-              <li class="radio-item">
-                <input type="radio" name="type-event" value="another" id="filter-another">
-                <label for="filter-another">
-                Другое
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="appointment-date">
-            <legend>Вопрос 3</legend>
-            <p>На какое число назначено мероприятие?</p>
-            <p>
-              <label class="visually-hidden for="appointment-date">Дата</label>
-              <input class="quiz-input" id="appointment-date" type="date" name="date" value="2023-03-23">
-            </p>
-          </fieldset>
-
-          <fieldset class="appointment-time">
-            <legend>Вопрос 4</legend>
-            <p>К какому времени надо быть готовой?</p>
-            <p>
-              <label class="visually-hidden for="appointment-time">Время</label>
-              <input class="quiz-input" id="appointment-time" type="time" name="time" value="09:30">
-            </p>
-          </fieldset>
-
-          <fieldset class="appointment-data">
-            <legend>Вопрос 5</legend>
-            <p>Давайте знакомиться?</p>
-            <p>
-              <label class="visually-hidden for="appointment-name">Имя</label>
-              <input class="quiz-input" id="appointment-name" type="text" name="name" placeholder="Имя">
-            </p>
-            <p>
-              <label class="visually-hidden for="appointment-phone">Телефон</label>
-              <input class="quiz-input" id="appointment-phone" type="tel" name="phone" placeholder="+7 123 4567890">
-            </p>
-          </fieldset>
-
-          <button class="button" type="submit">Отправить</button>
-          <p class="checkbox-policy">
-            <label class="checkbox-policy__wrapper">
-              <input type="checkbox" checked name="policyagree">
-              Согласен с условиями политики конфиденциальности данных
-            </label>
-          </p>
-        </form>
-        <div class="quiz__backimage">
-          <img src="img/backgrauonds/3.jpeg" width="" height="246" alt="">
-        </div>
-      </section>
-
       <section class="services">
         <h2>Мои услуги<br>для <span class="text-red">Вашей</span> красоты</h2>
         <div class="services__wrapper slider">
@@ -345,6 +208,131 @@
         </div>
         <div class="services__backimage">
           <img src="img/backgrauonds/2.jpg" width="" height="246" alt="">
+        </div>
+      </section>
+
+      <section class="quiz">
+        <h2>Оставьте заявку<br>
+        за <span class="text-red">15 секунд,</span> ответив<br>
+        всего на 5 вопросов</h2>
+        <p class="text-center">Это интересно и бесплатно!</p>
+
+        <form class="quiz__form" method="get" action="">
+          <fieldset>
+            <legend>Вопрос 1</legend>
+            <p>Что планируете сделать?</p>
+            <ul class="checkbox__list">
+              <li class="checkbox__item">
+                <input type="checkbox" name="makeup" id="filter-makeup" class="checkbox__input">
+                <label for="filter-makeup" class="checkbox__label"><span>Макияж</span></label>
+              </li>
+              <li class="checkbox__item">
+                <input type="checkbox" name="browfix" id="filter-browfix" class="checkbox__input">
+                <label for="filter-browfix" class="checkbox__label"><span>Долговременная укладка бровей</span></label>
+              </li>
+              <li class="checkbox__item">
+                <input type="checkbox" name="browcorrection" id="filter-browcorrection" class="checkbox__input">
+                <label for="filter-browcorrection" class="checkbox__label"><spa>Коррекция бровей</spa></label>
+              </li>
+              <li class="checkbox__item">
+                <input type="checkbox" name="browpaint" id="filter-browpaint" class="checkbox__input">
+                <label for="filter-browpaint" class="checkbox__label"><span>Окрашивание бровей</span></label>
+              </li>
+              <li class="checkbox__item">
+                <input type="checkbox" name="hair" id="filter-hair" class="checkbox__input">
+                <label for="filter-hair" class="checkbox__label"><span>Локоны</span></label>
+              </li>
+              <li class="checkbox__item">
+                <input type="checkbox" name="kurs" id="filter-kurs" class="checkbox__input">
+                <label for="filter-kurs" class="checkbox__label">Курс “Визаж для себя”<span></span></label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="">
+            <legend>Вопрос 2</legend>
+            <p>К какому мероприятию вы готовитесь?</p>
+            <ul class="radio__list">
+              <li class="radio__item">
+                <input checked type="radio" name="type-event" value="birthday" id="filter-birthday" class="radio__input">
+                <label for="filter-birthday" class="radio__label">
+                <span>День рождения</span>
+                </label>
+              </li>
+              <li class="radio__item">
+                <input type="radio" name="type-event" value="mary" id="filter-mary" class="radio__input">
+                <label for="filter-mary"  class="radio__label">
+                <span>Свадьба</span>
+                </label>
+              </li>
+              <li class="radio__item">
+                <input type="radio" name="type-event" value="corporative" id="filter-corporative" class="radio__input" >
+                <label for="filter-corporative"  class="radio__label">
+                <span>Корпоратив</span>
+                </label>
+              </li>
+              <li class="radio__item">
+                <input type="radio" name="type-event" value="foto" id="filter-foto" class="radio__input" >
+                <label for="filter-foto"  class="radio__label">
+                <span>Фотосессия</span>
+                </label>
+              </li>
+              <li class="radio__item">
+                <input type="radio" name="type-event" value="talking" id="filter-talking" class="radio__input" >
+                <label for="filter-talking"  class="radio__label">
+                <sap>Собеседование</sap>
+                </label>
+              </li>
+              <li class="radio__item">
+                <input type="radio" name="type-event" value="another" id="filter-another" class="radio__input" >
+                <label for="filter-another"  class="radio__label">
+                <span>Другое</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="appointment-date">
+            <legend>Вопрос 3</legend>
+            <p>На какое число назначено мероприятие?</p>
+            <p>
+              <label class="visually-hidden for="appointment-date">Дата</label>
+              <input class="quiz-input" id="appointment-date" type="date" name="date" value="2023-03-23">
+            </p>
+          </fieldset>
+
+          <fieldset class="appointment-time">
+            <legend>Вопрос 4</legend>
+            <p>К какому времени надо быть готовой?</p>
+            <p>
+              <label class="visually-hidden for="appointment-time">Время</label>
+              <input class="quiz-input" id="appointment-time" type="time" name="time" value="09:30">
+            </p>
+          </fieldset>
+
+          <fieldset class="appointment-data">
+            <legend>Вопрос 5</legend>
+            <p>Давайте знакомиться?</p>
+            <p>
+              <label class="visually-hidden for="appointment-name">Имя</label>
+              <input class="quiz-input" id="appointment-name" type="text" name="name" placeholder="Имя">
+            </p>
+            <p>
+              <label class="visually-hidden for="appointment-phone">Телефон</label>
+              <input class="quiz-input" id="appointment-phone" type="tel" name="phone" placeholder="+7 123 4567890">
+            </p>
+          </fieldset>
+
+          <button class="button" type="submit">Отправить</button>
+          <div class="checkbox__item">
+                <input type="checkbox" checked name="policy-quiz" id="policyagree-quiz" class="checkbox__input checkbox__input--policy">
+                <label for="policyagree-quiz" class="checkbox__label checkbox__label--policy">Я даю свое согласие на обработку персональных данных в соответствии с Условиями.<span></span></label>
+          </div>
+        </form>
+
+        <button class="button" type="button">Начать</button>
+        <div class="quiz__backimage">
+          <img src="img/backgrauonds/3.jpeg" width="" height="246" alt="">
         </div>
       </section>
 
@@ -449,12 +437,10 @@
             <textarea class="ask-questions__question" id="user-question" type="text" name="question" placeholder="Ваш вопрос"></textarea>
           </div>
           <button class="button" type="submit">Отправиить</button>
-          <p class="checkbox-policy">
-            <label class="checkbox-policy__wrapper">
-              <input type="checkbox" checked name="policyagree">
-              Согласен с условиями политики конфиденциальности данных
-            </label>
-          </p>
+          <div class="checkbox__item">
+                <input type="checkbox" checked name="policy-ask" id="policyagree-ask" class="checkbox__input">
+                <label for="policyagree-ask" class="checkbox__label checkbox__label--policy">Я даю свое согласие на обработку персональных данных в соответствии с Условиями.<span></span></label>
+          </div>
         </form>
         <div class="ask-questions__mesenger mesenger">
           <h3 class="mesenger__title">или напишите мне онлайн</h3>
@@ -550,12 +536,10 @@
             <input class="request__phone" id="user-phone" type="text" name="phone" placeholder="Телефон">
           </p>
           <button class="button" type="submit">Обратный звонок</button>
-          <p class="checkbox-policy">
-            <label class="checkbox-policy__wrapper">
-              <input type="checkbox" checked name="policyagree">
-              Согласен с условиями политики конфиденциальности данных
-            </label>
-          </p>
+           <div class="checkbox__item">
+                <input type="checkbox" checked name="policy-request" id="policyagree-request" class="checkbox__input">
+                <label for="policyagree-request" class="checkbox__label checkbox__label--policy">Я даю свое согласие на обработку персональных данных в соответствии с Условиями.<span></span></label>
+          </div>
         </form>
         <div class="request__mesenger mesenger">
           <h3 class="mesenger__title">или напишите мне онлайн</h3>
@@ -670,5 +654,7 @@
     </footer>
 		<!-- <script src="js/map.js"></script> -->
 		<!-- <script src="js/progress-bar.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <!-- <script src="js/tg-message.js"></script> -->
 	</body>
 </html>

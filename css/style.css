@@ -20,9 +20,6 @@ html, body {
   overflow-x: hidden;
 }
 
-
-
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="ratio"].visually-hidden {
@@ -56,7 +53,6 @@ h2 {
 }
 
 h3 {
-  /* text-align: center; */
   font-size: 16px;
 	line-height: 18px;
   font-weight: 700;
@@ -72,6 +68,7 @@ h3 {
   vertical-align: middle;
   text-transform: uppercase;
   box-shadow: 0 3px 3px #2B0D15;
+  cursor: pointer; /* убрать чтобы исчезла голубая подсветка */
 
   background-color: #A72146;
   border: none;
@@ -82,6 +79,9 @@ h3 {
 
   margin-top: 5px;
   margin-bottom: 10px;
+
+  position: relative;
+  top: 0;
 }
 
 .mesenger__title,
@@ -89,13 +89,25 @@ h3 {
   text-align: center;
 }
 
-/* .button:hover, */
-/* .button:focus { */
-  /* background-color: #E84975; */
-/* } */
+.button:hover {
+  background-color: #621A2E;
+  transition: background-color 0.5s ease 0s;
+}
 
 .button:active {
-  background-color: #621A2E;
+  top: 3px;
+  box-shadow: 0 2px 2px #2B0D15;
+  transition:top 0.3s ease 0s;
+}
+
+form * {
+  outline: none;
+  cursor: pointer;
+}
+
+form input:focus,
+form textarea:focus {
+   box-shadow: 0 3px 10px grey;
 }
 
 .ask-questions__form input,
@@ -130,8 +142,8 @@ h3 {
 .adventages-list,
 .mesenger__list,
 .site-list,
-.checkbox-list,
-.radio-list,
+.checkbox__list,
+.radio__list,
 .slider__list,
 .questions-list {
   list-style: none;
@@ -177,6 +189,7 @@ h3 {
 .questions__item {
   background-color: #F7E9ED;
   border-radius: 6px;
+  box-shadow: 0 2px 2px #2B0D15;
 }
 
 .contacts__list,
@@ -365,15 +378,54 @@ h3 {
   height: 57px;
 }
 
-.checkbox-policy {
-  margin:0;
+.radio__list {
+  padding: 10px 0px 0px 0px;
 }
 
-.checkbox-policy__wrapper {
-  font-size: 10px;
+.radio__item {
+  margin: 0px 0px 10px 0px;
+}
 
-  display: flex;
-  justify-content: space-between;
+.radio__input {
+  display: none;
+  cursor: pointer;
+}
+
+.radio__input:checked + .radio__label:after {
+  transform: scale(1);
+}
+
+.radio__label {
+  display: inline-flex;
+  font-size:16px;
+  line-height: 140%;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+}
+
+.radio__label:before {
+  content: "";
+  align-self: flex-start;
+  flex: 0 0 24px;
+  height: 24px;
+  background-color: #C06D84;
+  border-radius: 50%;
+  margin: 0px 10px 0px 0px;
+}
+
+.radio__label:after {
+  transition: transform 0.3s ease 0s;
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 16px;
+  height: 16px;
+  background-color: #621A2E;
+  border-radius: 50%;
+  transform: scale(0);
 }
 
 .quiz__backimage {
@@ -382,6 +434,62 @@ h3 {
   left: 140px;
   z-index: -1;
   opacity: 0.3;
+}
+
+/* Чек-бокс */
+
+.checkbox__list {
+  padding: 10px 0px 0px 0px;
+}
+
+.checkbox__item {
+  margin: 0px 0px 10px 0px;
+}
+
+.checkbox__input {
+  display: none;
+  cursor: pointer;
+}
+
+.checkbox__input:checked + .checkbox__label:after {
+  transform: scale(1);
+}
+
+.checkbox__label {
+  display: inline-flex;
+  font-size:16px;
+  line-height: 140%;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+}
+
+.checkbox__label:before {
+  content: "";
+  align-self: flex-start;
+  flex: 0 0 24px;
+  height: 24px;
+  background-color: #C06D84;
+  border-radius: 6px;
+  margin: 0px 10px 0px 0px;
+}
+
+.checkbox__label:after {
+  transition: transform 0.3s ease 0s;
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 16px;
+  height: 16px;
+  background-color: #621A2E;
+  border-radius: 6px;
+  transform: scale(0);
+}
+
+.checkbox__label--policy {
+  font-size:12px;
 }
 
 /* Мои услуги */
@@ -483,6 +591,7 @@ h3 {
   z-index: -1;
   opacity: 0.3;
 }
+
 /* Вопросы и ответы */
 
 .questions {
@@ -521,7 +630,6 @@ h3 {
   padding-bottom: 15px;
 }
 
-
 details > summary {
   font-size: 16px;
   line-height: 18px;
@@ -535,7 +643,8 @@ details > summary {
 }
 
 summary:before {
-  content: url(https://faramund21.github.io/Landing-Visazist.github.io/img/triangle.png);
+  /* content: url(https://faramund21.github.io/Landing-Visazist.github.io/img/triangle.png); */
+  content: url(file:///D:/landing-Kristina/source/img/triangle.png);
   margin: -5px 5px 0 0;
   position: absolute;
   top: 25px;
@@ -543,46 +652,13 @@ summary:before {
 }
 
 details[open] summary:before {
-   content: url(https://faramund21.github.io/Landing-Visazist.github.io/img/triangle180.png);
+  /* content: url(https://faramund21.github.io/Landing-Visazist.github.io/img/triangle180.png); */
+  content: url(file:///D:/landing-Kristina/source/img/triangle180.png);
 }
 
 details summary::-webkit-details-marker {
   display:none;
 }
-
-
-/* details > div { */
-  /* border: 1px #ccc solid; */
-  /* padding: 10px; */
-/* } */
-
- /* details[open] > summary { */
-  /* color:#eee; */
-  /* background-color:#333; */
-/* } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Задайте свой вопрос */
 
