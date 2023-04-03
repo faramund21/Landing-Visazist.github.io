@@ -137,6 +137,7 @@ form textarea:focus {
   border-radius: 6px;
 }
 
+.request__time,
 .appointment-date input,
 .appointment-data input,
 .appointment-time input {
