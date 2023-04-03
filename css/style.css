@@ -63,6 +63,11 @@ img {
   height: auto;
 }
 
+* {
+  /* Убирает синий фон при нажатии */
+  -webkit-tap-highlight-color: transparent;
+}
+
 .button {
   font: inherit;
 
@@ -132,6 +137,7 @@ form textarea:focus {
   border-radius: 6px;
 }
 
+.appointment-date input,
 .appointment-data input,
 .appointment-time input {
   -webkit-min-logical-width: calc(100% - 16px);
