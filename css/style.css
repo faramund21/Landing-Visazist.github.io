@@ -132,6 +132,11 @@ form textarea:focus {
   border-radius: 6px;
 }
 
+.appointment-data input,
+.appointment-time input {
+  -webkit-min-logical-width: calc(100% - 16px);
+}
+
 .main-nav {
   font-size: 14px;
   line-height: 20px;
