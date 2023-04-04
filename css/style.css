@@ -151,7 +151,7 @@ form textarea:focus {
 .site-list,
 .checkbox__list,
 .radio__list,
-.slider__list,
+.services-list,
 .questions-list {
   list-style: none;
   margin-left: 0;
@@ -551,25 +551,41 @@ form textarea:focus {
 .services__wrapper {
   display: flex;
   flex-direction: column;
-}
-
-.services__description {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services__item img{
+  border-radius: 6px;
 }
 
 .services__title {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 250px;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
 }
+
+/* .services__description { */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  /* margin: 10px 30px; */
+  /* padding: 0; */
+/* } */
 
 .services__time,
 .services__price {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 10px auto;
   padding: 0;
 }
 
@@ -581,15 +597,6 @@ form textarea:focus {
   margin-bottom: 0;
   justify-content: center;
   padding: 0;
-}
-
-.slider__toggle {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.sliderv {
-  margin-bottom: 0;
 }
 
 .services__backimage {
@@ -821,6 +828,11 @@ textarea.ask-questions__question {
   margin-left: auto;
   margin-right: auto;
   width: 320px;
+}
+
+.review-slide {
+  box-shadow: 0px 5px 5px #2B0D15;
+  /* border: 1px solid #621A2E; */
 }
 
 .reviews__backimage {
@@ -1097,12 +1109,14 @@ textarea.ask-questions__question {
   max-width: 320px;
   width: 100%;
   height: auto;
-  margin: 0 auto;
-  border: 2px solid red;
+  /* margin: 10px auto; */
+  border-radius: 6px;
+  line-height: 0;
 }
 
 .swiper-wrapper {
   box-sizing: content-box;
+  margin-bottom: 0px;
 }
 
 .swiper-slide {
@@ -1111,9 +1125,55 @@ textarea.ask-questions__question {
 
 .swiper-slide img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
+/* Кнопки вперед и назад */
+
+.swiper-button-prev {
+  top: 340px;
+}
+
+.swiper-button-next {
+  top: 340px;
+}
+
+.swiper-button-prev__reveiws {
+  top: 360px;
+}
+
+.swiper-button-next__reveiws {
+  top: 360px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: #621A2E;
+  font-size: 30px;
+}
+
+/* Пагинация (точки) */
+/* .swiper-pagination {}*/
+
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-fraction {
+  top: 335px;
+}
+
+.swiper-pagination-bullet {
+  /* background-color: transparent; */
+  background-color: #C06D84;
+  width: 10px;
+  height: 10px;
+  opacity: .6;
+  border-radius: 6px;
+  border: .5px solid #621A2E;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #621A2E;
+  opacity: 1;
+}
 
 /* Позиционирование */
 /* Блочная модель */
