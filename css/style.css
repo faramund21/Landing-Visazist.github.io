@@ -634,7 +634,35 @@ form textarea:focus {
   opacity: 0.3;
 }
 
-/* Вопросы и ответы */
+/* ВОПРОСЫ И ОТВЕТЫ */
+
+/* НАЧАЛО АНИМАЦИИ */
+
+/* http://daneden.me/animate/ */
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-1.25em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.details-animated[open] {
+    animation-name: fadeInDown;
+    animation-duration: 0.7s;
+}
+
+.details-animated {
+  transition: height 1s ease;
+}
+.details-animated:not([open]) { height: auto; }
+.details-animated[open] { height: auto; }
+
+/* КОНЕЦ АНИМАЦИИ */
 
 .questions {
   display: flex;
@@ -1062,9 +1090,39 @@ textarea.ask-questions__question {
   transform: rotate(-45deg);
 }
 
+/* СЛАЙДЕР */
+
+.swiper {
+  display: flex;
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+.swiper-wrapper {
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  displat: flex;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+
 /* Позиционирование */
 /* Блочная модель */
 /* Типографика */
 /* Оформление */
 /* Анимация */
 /* Разное */
+
+.selection {
+  outline: 5px solid fade(red, 50%);
+  outline-offset: -5px;
+}
