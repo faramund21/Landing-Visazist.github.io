@@ -58,10 +58,11 @@ h3 {
   font-weight: 700;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+/* Вставка изображений любых в бокс */
+/* img { */
+  /* max-width: 100%; */
+  /* height: auto; */
+/* } */
 
 * {
   /* Убирает синий фон при нажатии */
@@ -116,7 +117,7 @@ form * {
 
 form input:focus,
 form textarea:focus {
-   box-shadow: 0 3px 10px grey;
+  box-shadow: 0 3px 10px grey;
 }
 
 .ask-questions__form input,
@@ -141,18 +142,8 @@ form textarea:focus {
 .appointment-date input,
 .appointment-data input,
 .appointment-time input {
+  text-align: left;
   -webkit-min-logical-width: calc(100% - 16px);
-}
-
-.main-nav {
-  font-size: 14px;
-  line-height: 20px;
-
-  background-color: white;
-}
-
-.main-nav__wrapper {
-  background-color: #5A433B;
 }
 
 .adventages-list,
@@ -165,15 +156,6 @@ form textarea:focus {
   list-style: none;
   margin-left: 0;
   padding: 0;
-}
-
-.main-nav__wrapper a{
-  color: #F1E084;
-}
-
-.main-nav__wrapper a:hover,
-.main-nav__wrapper a:focus{
-  color: #E84975;
 }
 
 .adventages-list {
@@ -265,7 +247,12 @@ form textarea:focus {
   font-size: 20px;
 }
 
+
 /* СЕТОЧНЫЕ СТИЛИ */
+
+.page-main {
+  width: 100%;
+}
 
 /* Хэдэр */
 
@@ -291,18 +278,55 @@ form textarea:focus {
   padding: 0;
 }
 
-/* Навигация */
+/* КНОПКА МЕНЮ - БУРГЕР */
 
 .main-nav__toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+
   width: 31px;
-  height: 17px;
+  height: 31px;
 
   margin: 0;
   padding: 0;
 }
 
-.page-main {
-  width: 100%;
+.toggle-line {
+  width: 31px;
+  height: 3px;
+  background: #5A433B;
+}
+
+/* НАВИГАЦИЯ */
+
+.main-nav {
+  font-size: 14px;
+  line-height: 20px;
+
+  background-color: white;
+}
+
+.main-nav__wrapper {
+  background-color: #5A433B;
+
+}
+
+.main-nav__wrapper a{
+  color: #F1E084;
+}
+
+.main-nav__wrapper a:hover,
+.main-nav__wrapper a:focus{
+  color: #E84975;
+}
+
+.site-list {
+  display: flex;
+  justify-content: space-around;
+
+  margin-bottom: 15px;
 }
 
 /* Первый экран */
@@ -371,6 +395,7 @@ form textarea:focus {
   right: 140px;
   z-index: -1;
   opacity: 0.3;
+
 }
 
 /* Вопросы квиза */
@@ -448,7 +473,7 @@ form textarea:focus {
 .quiz__backimage {
   position: absolute;
   bottom: -120px;
-  left: 140px;
+  right: 140px;
   z-index: -1;
   opacity: 0.3;
 }
@@ -570,7 +595,7 @@ form textarea:focus {
 .services__backimage {
   position: absolute;
   bottom: -120px;
-  right: 140px;
+  left: 140px;
   z-index: -1;
   opacity: 0.3;
 }
@@ -919,6 +944,122 @@ textarea.ask-questions__question {
 .footer__right {
   margin: 0;
   padding: 0;
+}
+
+/* МОДАЛЬНОЕ ОКНО - НАВИГАЦИЯ ДЛЯ СМАРТФОНА */
+
+.nav-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: 0 3px 10px grey;
+
+  border-radius: 0px 0px 10px 10px;
+  width: 320px;
+}
+
+.smart-nav__wrapper {
+  font-size: 20px;
+  line-height: 20px;
+
+  color: #5A433B;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.smart-nav__wrapper a:hover,
+.smart-nav__wrapper a:focus{
+  color: #E84975;
+}
+
+.smart-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 15px;
+}
+
+.smart-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  /* margin-bottom: 15px; */
+  margin-top: 10px;
+
+  width: 320px;
+}
+
+.smart-list__item {
+  display: flex;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  justify-content: center;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid #5A433B;
+}
+
+.smart-list__item a {
+    text-decoration: none;
+    color: #5A433B;
+}
+
+/* КНОПКА */
+
+.smart-nav__toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+
+  width: 31px;
+  height: 31px;
+
+  margin: 0;
+  margin-right: 5px;
+  padding: 0;
+}
+
+.toggle-line {
+  width: 31px;
+  height: 3px;
+  background: #5A433B;
+}
+
+.toggle-cross:before,
+.toggle-cross:after {
+  content: "";
+
+  position: absolute;
+
+  width: 31px;
+  height: 3px;
+
+  background: #5A433B;
+}
+.toggle-cross:before {
+  transform: rotate(45deg);
+}
+
+.toggle-cross:after {
+  transform: rotate(-45deg);
 }
 
 /* Позиционирование */
