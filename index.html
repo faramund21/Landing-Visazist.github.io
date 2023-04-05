@@ -11,7 +11,7 @@
   </head>
 
 	<body class="page__body">
-    <p><a name="main"></a></p>
+    <p class="visually-hidden"><a name="main"></a></p>
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
@@ -50,7 +50,6 @@
           <div class="toggle-line"></div>
           <div class="toggle-line"></div>
           <div class="toggle-line"></div>
-          <!-- <img src="img/burger.png" width="31" height="17" alt="кнопка открыть меню"> -->
         </a>
       </div>
       <nav class="main-nav visually-hidden">
@@ -82,9 +81,10 @@
       </nav>
     </header>
 
+<!-- ГЛАВНАЯ СТРАНИЦА -->
+
     <main class="page-main">
       <h1 class="visually-hidden">Визажист Цыбина Кристина Чита</h1>
-
       <section class="first-screen">
         <div class="first-screen__header">
           <h2><span class="text-red first-screen__offer">Макияж, </span>локоны,<br>брови в Чите</h2>
@@ -97,6 +97,8 @@
           </div>
         </div>
       </section>
+
+<!-- ПРЕИМУЩЕСТВА -->
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -146,7 +148,7 @@
 <!-- УСЛУГИ -->
 
       <section class="services">
-        <p><a name="services"></a></p>
+        <p class="visually-hidden"><a name="services"></a></p>
         <h2>Мои услуги<br>для <span class="text-red">Вашей</span> красоты</h2>
         <div class="services__wrapper swiper">
           <ul class="services-list swiper-wrapper">
@@ -328,7 +330,7 @@
 <!-- ПРИМЕРЫ РАБОТ -->
 
       <section class="examples">
-        <p><a name="Portfolio"></a></p>
+        <p class="visually-hidden"><a name="Portfolio"></a></p>
         <h2>Более <span class="text-red">300</span><br>довольных клиентов</h2>
         <div class="examples__wrapper swiper">
           <ul class="examples-list swiper-wrapper">
@@ -374,8 +376,6 @@
               </div>
             </li>
           </ul>
-            <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
 
           <!-- If we need navigation buttons -->
           <div class="swiper-button-prev swiper-button-prev__examples"></div>
@@ -389,7 +389,7 @@
 <!-- ВОПРОСЫ -->
 
       <section class="questions">
-        <p><a name="questions"></a></p>
+        <p class="visually-hidden"><a name="questions"></a></p>
         <h2>Часто задаваемые<br>вопросы</h2>
         <h3>и ответы на них</h3>
         <ul class="questions-list">
@@ -495,7 +495,7 @@
 <!-- ВАТСАП-РУКА -->
 
       <section class="whatsapp-hand">
-        <p><a name="reserve"></a></p>
+        <p class="visually-hidden"><a name="reserve"></a></p>
         <a class="first-screen__foto">
           <img src="img/foto2.png" width="186" height="" alt="Фото Визажист Цыбина Кристина Чита">
         </a>
@@ -515,12 +515,13 @@
         <div class="whatsapp-hand__backimage">
           <img src="img/backgrauonds/3.jpeg" width="" height="271" alt="">
         </div>
+
       </section>
 
 <!-- ОТЗЫВЫ -->
 
       <section class="reviews">
-        <p><a name="reviews"></a></p>
+        <p class="visually-hidden"><a name="reviews"></a></p>
         <h2>Мне важно<br><span class="text-red text-uppercase">ваше</span> мнение!</h2>
         <h3 class="reviews__description text-center">посмотрите отзывы моих клиентов</h3>
         <!-- Slider main container -->
@@ -590,24 +591,25 @@
         <h3 class="request__description">
           В какое время вам позвонить?
         </h3>
-        <form class="request__form" method="post" action="">
+        <form class="request__form" id="tg">
           <p>
-            <label class="visually-hidden" for="request__time user-time">Время</label>
+            <label class="visually-hidden" for="user-time">Время</label>
             <input class="request__time" id="user-time" type="time" name="time" value="15:00">
           </p>
           <p>
-            <label class="visually-hidden" for="request__name user-name">Имя</label>
+            <label class="visually-hidden" for="user-name">Имя</label>
             <input class="request__name" id="user-name" type="text" name="name" placeholder="Имя">
           </p>
           <p>
-            <label class="visually-hidden" for="request__phone user-phone">Телефон</label>
-            <input class="request__phone" id="user-phone" type="text" name="phone" placeholder="Телефон">
+            <label class="visually-hidden" for="user-phone">Телефон</label>
+            <input class="request__phone" id="user-phone" type="tel" name="phone" placeholder="Телефон">
           </p>
           <button class="button" type="submit">Обратный звонок</button>
-           <div class="checkbox__item">
+          <div class="checkbox__item">
                 <input type="checkbox" checked name="policy-request" id="policyagree-request" class="checkbox__input">
                 <label for="policyagree-request" class="checkbox__label checkbox__label--policy">Я даю свое согласие на обработку персональных данных в соответствии с Условиями.<span></span></label>
           </div>
+          <div id="success" style="display: none;"></div>
         </form>
         <div class="request__mesenger mesenger">
           <h3 class="mesenger__title">или напишите мне онлайн</h3>
@@ -638,7 +640,7 @@
 <!-- ФУТЕР -->
 
     <footer class="page-footer">
-      <p><a name="contacts"></a></p>
+      <p class="visually-hidden"><a name="contacts"></a></p>
       <div class="page-footer__wrapper">
         <h2 class="page-footer__title">Я жду вас!</h2>
         <h3 class="contacts__title">Со мной можно связаться</h3>
@@ -724,7 +726,7 @@
       </div>
     </footer>
 
-    <section class="modal modal__smart-nav">
+    <section class="modal modal__smart-nav visually-hidden">
       <div class="nav-header__wrapper">
         <a class="page-header__logo">
           <img src="img/logo.png" width="136" height="44" alt="Логотип Визажист Цыбина Кристина Чита">
@@ -763,9 +765,7 @@
     </section>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
-		<!-- <script src="js/map.js"></script> -->
-		<!-- <script src="js/progress-bar.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
-    <!-- <script src="js/tg-message.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="js/tg-message.js"></script>
 	</body>
 </html>

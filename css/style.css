@@ -171,6 +171,7 @@ form textarea:focus {
   text-decoration-line: underline;
   text-transform: uppercase;
   text-align: left;
+  line-height: 0;
 }
 
 .services__price {
@@ -179,6 +180,7 @@ form textarea:focus {
   text-decoration-line: underline;
   text-transform: uppercase;
   text-align: right;
+  line-height: 0;
 }
 
 .questions-list {
@@ -252,6 +254,8 @@ form textarea:focus {
 /* СЕТОЧНЫЕ СТИЛИ */
 
 .page-main {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -336,8 +340,8 @@ form textarea:focus {
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 0px;
-  margin-top: 15px;
+  margin-bottom: 25px;
+  margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
   width: 320px;
@@ -576,14 +580,6 @@ form textarea:focus {
   line-height: 20px;
 }
 
-/* .services__description { */
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* justify-content: space-between; */
-  /* margin: 10px 30px; */
-  /* padding: 0; */
-/* } */
-
 .services__time,
 .services__price {
   margin: 10px auto;
@@ -630,8 +626,12 @@ form textarea:focus {
   padding: 0;
 }
 
+.examples__title {
+  text-align: center;
+}
+
 .examples__description {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .examples__backimage {
@@ -678,7 +678,7 @@ form textarea:focus {
   align-items: center;
 
   margin-bottom: 25px;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
   width: 320px;
@@ -885,7 +885,7 @@ textarea.ask-questions__question {
   flex-direction: column;
   align-items: center;
 
-  margin-bottom: 0;
+  margin-bottom: 25px;
   margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
@@ -1112,7 +1112,6 @@ textarea.ask-questions__question {
   height: auto;
   /* margin: 10px auto; */
   border-radius: 6px;
-  line-height: 0;
 }
 
 .swiper-wrapper {
@@ -1144,11 +1143,11 @@ textarea.ask-questions__question {
 /* Кнопки вперед назад ПРИМЕРЫ */
 
 .swiper-button-prev__examples{
-  top: 200px;
+  top: 400px;
 }
 
 .swiper-button-next__examples {
-  top: 200px;
+  top: 400px;
 }
 
 /* Кнопки вперед назад ОТЗЫВЫ */
