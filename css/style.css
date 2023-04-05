@@ -151,6 +151,7 @@ form textarea:focus {
 .site-list,
 .checkbox__list,
 .radio__list,
+.examples-list,
 .services-list,
 .questions-list {
   list-style: none;
@@ -630,7 +631,7 @@ form textarea:focus {
 }
 
 .examples__description {
-  margin-bottom: 0;
+  font-size: 20px;
 }
 
 .examples__backimage {
@@ -1130,20 +1131,34 @@ textarea.ask-questions__question {
 
 /* Кнопки вперед и назад */
 
-.swiper-button-prev {
-  top: 340px;
+/* Кнопки вперед назад УСЛУГИ */
+
+.swiper-button-prev__services{
+  top: 360px;
 }
 
-.swiper-button-next {
-  top: 340px;
+.swiper-button-next__services {
+  top: 360px;
 }
+
+/* Кнопки вперед назад ПРИМЕРЫ */
+
+.swiper-button-prev__examples{
+  top: 200px;
+}
+
+.swiper-button-next__examples {
+  top: 200px;
+}
+
+/* Кнопки вперед назад ОТЗЫВЫ */
 
 .swiper-button-prev__reveiws {
-  top: 360px;
+  top: 340px;
 }
 
 .swiper-button-next__reveiws {
-  top: 360px;
+  top: 340px;
 }
 
 .swiper-button-prev:after,
@@ -1153,7 +1168,7 @@ textarea.ask-questions__question {
 }
 
 /* Пагинация (точки) */
-/* .swiper-pagination {}*/
+.swiper-pagination {}
 
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-fraction {
@@ -1161,7 +1176,6 @@ textarea.ask-questions__question {
 }
 
 .swiper-pagination-bullet {
-  /* background-color: transparent; */
   background-color: #C06D84;
   width: 10px;
   height: 10px;
@@ -1174,6 +1188,12 @@ textarea.ask-questions__question {
   background-color: #621A2E;
   opacity: 1;
 }
+
+/* ПУЛЬСАЦИЯ */
+
+
+
+
 
 /* Позиционирование */
 /* Блочная модель */
