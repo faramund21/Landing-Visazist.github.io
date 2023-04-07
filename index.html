@@ -7,78 +7,96 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/slider.css">
 		<link rel="icon" href="img/favicon.png" type="image/png">
   </head>
 
 	<body class="page__body">
     <p class="visually-hidden"><a name="main"></a></p>
+
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img src="img/logo.png" width="136" height="44" alt="Логотип Визажист Цыбина Кристина Чита">
-        </a>
-        <div class="header__map map visually-hidden">
-          <img src="img/mapicon.png" width="30" height="30" alt="Иконка карты">
-          <a class="map__link" href="https://www.2gis.ru">Показать на карте</a>
-          <b class="map__title">Адрес салона:<br>г. Чита, ул.Шилова, 95В</b>
+
+      <div class="page-header__body">
+        <div class="page-header__wrapper">
+          <!-- ЛОГОТИП -->
+          <a class="page-header__logo">
+            <img src="img/logo.png" alt="Логотип Визажист Цыбина Кристина Чита">
+          </a>
+
+          <!-- АДРЕС -->
+          <a class="header__map map__link" href="https://www.2gis.ru">
+            <img src="img/mapicon.png" width="30" height="30" alt="Иконка карты">
+            <b class="map__title">Адрес салона:<br>г. Чита, ул.Шилова, 95В<br>Показать на карте</b>
+          </a>
+
+          <!-- МЕСЕНДЖЕРЫ -->
+          <div class="header__mesenger mesenger">
+            <b class="mesenger__title">Задайте вопрос</b>
+            <ul class="mesenger__list">
+              <li class="mesenger__item">
+                <a class="mesenger__link mesenger__link--viber" href="viber://chat?number=%2B79143563455">
+                  <img src="img/viber.png" width="30" height="30" alt="Я в Вибер">
+                </a>
+              </li>
+              <li class="mesenger__item">
+                <a class="mesenger__link mesenger__link--whatsapp" href="https://wa.me/79143563455">
+                  <img src="img/whatsapp.png" width="30" height="30" alt="Я в Ватсап">
+                </a>
+              </li>
+              <li class="mesenger__item">
+                <a class="mesenger__link mesenger__link--telegram" href="tg://resolve?domain=kristina_tsibina_makeup">
+                  <img src="img/telegram.png" width="30" height="30" alt="Я в Телеграм">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ОБРАТНЫЙ ЗВОНОК -->
+          <a class="header__phone phone" href="tel:+79141292995">
+            <b class="phone__title">Звоните Пн-Вс: 9:00 - 22:00</b>
+            <div class="phone__wrapper">
+               <div>
+                <img src="img/phone.png" width="30" height="30" alt="Обратный звонок">
+               </div>
+               <b class="phone__title">+7 (914) 356-34-55<br>Обратный звонок</b>
+            </div>
+          </a>
+
+          <!-- БУРГЕР -->
+          <a class="main-nav__toggle" href="">
+            <span></span>
+          </a>
         </div>
-        <div class="header__mesenger mesenger visually-hidden">
-          <b class="mesenger__title">Задайте вопрос<br>я онлайн</b>
-          <ul class="mesenger__list">
-            <li class="mesenger__item">
-              <a class="mesenger__link mesenger__link--viber" href="viber://chat?number=%2B79143563455">
-                <img src="img/viber.png" width="30" height="30" alt="Я в Вибер">
-              </a>
-            </li>
-            <li class="mesenger__item">
-              <a class="mesenger__link mesenger__link--whatsapp" href="https://wa.me/79143563455">
-                <img src="img/whatsapp.png" width="30" height="30" alt="Я в Ватсап">
-              </a>
-            </li>
-            <li class="mesenger__item">
-              <a class="mesenger__link mesenger__link--telegram" href="tg://resolve?domain=kristina_tsibina_makeup">
-                <img src="img/telegram.png" width="30" height="30" alt="Я в Телеграм">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="header__phone phone visually-hidden">
-          <b class="phone__title">Звоните Пн-Вс: 9:00 - 22:00<br>+7 (914) 356-34-55</b>
-          <a class="button" href="tel:+79141292995">Обратный звонок</a>
-        </div>
-        <a class="main-nav__toggle" href="">
-          <div class="toggle-line"></div>
-          <div class="toggle-line"></div>
-          <div class="toggle-line"></div>
-        </a>
+
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="menu__item" href="#main">Главная</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class="menu__item" href="#services">Услуги</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class="menu__item" href="#Portfolio">Портфолио</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class="menu__item" href="#questions">Вопрос-Ответ</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class="menu__item" href="#reserve">Запись</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class="menu__item" href="#reviews">Отзывы</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class="menu__item" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <nav class="main-nav visually-hidden">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="#main">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="#services">Услуги</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="#Portfolio">Портфолио</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="#questions">Вопрос-Ответ</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="#reserve">Запись</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="#reviews">Отзывы</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="#contacts">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
     </header>
 
 <!-- ГЛАВНАЯ СТРАНИЦА -->
@@ -128,6 +146,7 @@
             <b class="advantages__description">4+ лет опыта в сфере красоты</b>
           </li>
         </ul>
+
         <button class="button" type="button">
           <span class="text-bold text-big">
             Скидка 10%
@@ -135,6 +154,7 @@
           <br>
           при записи онлайн
         </button>
+
         <p class="first-screen__advice visually-hidden">
           Ответьте на несколько вопросов<br>
           и запишитесь на услугу, получив<br>
@@ -143,6 +163,7 @@
         <div class="advantages__backimage">
           <img src="img/backgrauonds/1.jpg" width="" height="200" alt="">
         </div>
+
       </section>
 
 <!-- УСЛУГИ -->
@@ -317,7 +338,8 @@
           <button class="button" type="submit">Отправить</button>
           <div class="checkbox__item">
                 <input type="checkbox" checked name="policy-quiz" id="policyagree-quiz" class="checkbox__input checkbox__input--policy">
-                <label for="policyagree-quiz" class="checkbox__label checkbox__label--policy">Я даю свое согласие на обработку персональных данных в соответствии с Условиями.<span></span></label>
+                <label for="policyagree-quiz" class="checkbox__label checkbox__label--policy">Я даю свое согласие на обработку персональных данных в соответствии с Условиями.</label>
+
           </div>
         </form>
 
@@ -332,7 +354,7 @@
       <section class="examples">
         <p class="visually-hidden"><a name="Portfolio"></a></p>
         <h2>Более <span class="text-red">300</span><br>довольных клиентов</h2>
-        <div class="examples__wrapper swiper">
+        <div class="examples__wrapper exam">
           <ul class="examples-list swiper-wrapper">
             <li class="examples__item swiper-slide">
               <div>
@@ -728,48 +750,50 @@
 
 <!-- МОДАЛЬНОЕ ОКНО РАСКРЫТЫЙ БУРГЕР -->
 
-    <section class="modal modal__smart-nav">
-      <div class="nav-header__wrapper">
-        <a class="page-header__logo">
-          <img src="img/logo.png" width="136" height="44" alt="Логотип Визажист Цыбина Кристина Чита">
-        </a>
-        <a class="smart-nav__toggle " href="">
-          <div class="toggle-cross"></div>
-        </a>
-        <nav class="smart-nav nav__modal">
-          <div class="smart-nav__wrapper">
-            <ul class="smart-nav__list smart-list">
-              <li class="smart-list__item smart-list__item--active">
-                <a href="#main">Главная</a>
-              </li>
-              <li class="smart-list__item smart-list__item--active">
-                <a href="#services">Услуги</a>
-              </li>
-              <li class="smart-list__item smart-list__item--active">
-                <a href="#Portfolio">Портфолио</a>
-              </li>
-              <li class="smart-list__item smart-list__item--active">
-                <a href="#questions">Вопрос-Ответ</a>
-              </li>
-              <li class="smart-list__item smart-list__item--active">
-                <a href="#reserve">Запись</a>
-              </li>
-              <li class="smart-list__item smart-list__item--active">
-                <a href="#reviews">Отзывы</a>
-              </li>
-              <li class="smart-list__item smart-list__item--active">
-                <a href="#contacts">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </section>
+    <!-- <section class="modal modal__smart-nav"> -->
+      <!-- <div class="nav-header__wrapper"> -->
+        <!-- <a class="page-header__logo"> -->
+          <!-- <img src="img/logo.png" width="136" height="44" alt="Логотип Визажист Цыбина Кристина Чита"> -->
+        <!-- </a> -->
+        <!-- <a class="smart-nav__toggle " href=""> -->
+          <!-- <div class="toggle-cross"></div> -->
+        <!-- </a> -->
+        <!-- <nav class="smart-nav nav__modal"> -->
+          <!-- <div class="smart-nav__wrapper"> -->
+            <!-- <ul class="smart-nav__list smart-list"> -->
+              <!-- <li class="smart-list__item smart-list__item--active"> -->
+                <!-- <a href="#main">Главная</a> -->
+              <!-- </li> -->
+              <!-- <li class="smart-list__item smart-list__item--active"> -->
+                <!-- <a href="#services">Услуги</a> -->
+              <!-- </li> -->
+              <!-- <li class="smart-list__item smart-list__item--active"> -->
+                <!-- <a href="#Portfolio">Портфолио</a> -->
+              <!-- </li> -->
+              <!-- <li class="smart-list__item smart-list__item--active"> -->
+                <!-- <a href="#questions">Вопрос-Ответ</a> -->
+              <!-- </li> -->
+              <!-- <li class="smart-list__item smart-list__item--active"> -->
+                <!-- <a href="#reserve">Запись</a> -->
+              <!-- </li> -->
+              <!-- <li class="smart-list__item smart-list__item--active"> -->
+                <!-- <a href="#reviews">Отзывы</a> -->
+              <!-- </li> -->
+              <!-- <li class="smart-list__item smart-list__item--active"> -->
+                <!-- <a href="#contacts">Контакты</a> -->
+              <!-- </li> -->
+            <!-- </ul> -->
+          <!-- </div> -->
+        <!-- </nav> -->
+      <!-- </div> -->
+    <!-- </section> -->
 
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="js/tg-message.js"></script>
+    <script src="js/index.js"></script>
+     <script src="js/toggle.js"></script>
 	</body>
 </html>

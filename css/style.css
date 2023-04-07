@@ -105,7 +105,7 @@ h3 {
   box-shadow: 0 2px 2px #2B0D15;
   transition:top 0.3s ease 0s;
 }
-.mesenger__title,
+
 .social__title {
   text-align: center;
 }
@@ -148,7 +148,6 @@ form textarea:focus {
 
 .adventages-list,
 .mesenger__list,
-.site-list,
 .checkbox__list,
 .radio__list,
 .examples-list,
@@ -259,81 +258,6 @@ form textarea:focus {
   width: 100%;
 }
 
-/* Хэдэр */
-
-.page-header {
-  width: 100%;
-}
-
-.page-header__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-
-  margin-bottom: 15px;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
-}
-
-.page-header__logo {
-  margin: 0;
-  padding: 0;
-}
-
-/* КНОПКА МЕНЮ - БУРГЕР */
-
-.main-nav__toggle {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  position: relative;
-
-  width: 31px;
-  height: 31px;
-
-  margin: 0;
-  padding: 0;
-}
-
-.toggle-line {
-  width: 31px;
-  height: 3px;
-  background: #5A433B;
-}
-
-/* НАВИГАЦИЯ */
-
-.main-nav {
-  font-size: 14px;
-  line-height: 20px;
-
-  background-color: white;
-}
-
-.main-nav__wrapper {
-  background-color: #5A433B;
-
-}
-
-.main-nav__wrapper a{
-  color: #F1E084;
-}
-
-.main-nav__wrapper a:hover,
-.main-nav__wrapper a:focus{
-  color: #E84975;
-}
-
-.site-list {
-  display: flex;
-  justify-content: space-around;
-
-  margin-bottom: 15px;
-}
-
 /* Первый экран */
 
 .first-screen {
@@ -344,6 +268,8 @@ form textarea:focus {
   margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 100px;
+
   width: 320px;
 }
 
@@ -986,213 +912,6 @@ textarea.ask-questions__question {
   margin: 0;
   padding: 0;
 }
-
-/* МОДАЛЬНОЕ ОКНО - НАВИГАЦИЯ ДЛЯ СМАРТФОНА */
-
-.nav-header__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-
-  margin-bottom: 15px;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-
-  box-shadow: 0 3px 10px grey;
-
-  border-radius: 0px 0px 10px 10px;
-  width: 320px;
-}
-
-.smart-nav__wrapper {
-  font-size: 20px;
-  line-height: 20px;
-
-  color: #5A433B;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.smart-nav__wrapper a:hover,
-.smart-nav__wrapper a:focus{
-  color: #E84975;
-}
-
-.smart-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-
-  margin-bottom: 15px;
-}
-
-.smart-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-
-  /* margin-bottom: 15px; */
-  margin-top: 10px;
-
-  width: 320px;
-}
-
-.smart-list__item {
-  display: flex;
-  padding-bottom: 15px;
-  margin-top: 15px;
-  justify-content: center;
-  width: 260px;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 2px solid #5A433B;
-}
-
-.smart-list__item a {
-    text-decoration: none;
-    color: #5A433B;
-}
-
-/* КНОПКА */
-
-.smart-nav__toggle {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  position: relative;
-
-  width: 31px;
-  height: 31px;
-
-  margin: 0;
-  margin-right: 5px;
-  padding: 0;
-}
-
-.toggle-line {
-  width: 31px;
-  height: 3px;
-  background: #5A433B;
-}
-
-.toggle-cross:before,
-.toggle-cross:after {
-  content: "";
-
-  position: absolute;
-
-  width: 31px;
-  height: 3px;
-
-  background: #5A433B;
-}
-.toggle-cross:before {
-  transform: rotate(45deg);
-}
-
-.toggle-cross:after {
-  transform: rotate(-45deg);
-}
-
-/* СЛАЙДЕР */
-
-.swiper {
-  display: flex;
-  max-width: 320px;
-  width: 100%;
-  height: auto;
-  /* margin: 10px auto; */
-  border-radius: 6px;
-}
-
-.swiper-wrapper {
-  box-sizing: content-box;
-  margin-bottom: 0px;
-}
-
-.swiper-slide {
-  displat: flex;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: auto;
-}
-
-/* Кнопки вперед и назад */
-
-/* Кнопки вперед назад УСЛУГИ */
-
-.swiper-button-prev__services{
-  top: 360px;
-}
-
-.swiper-button-next__services {
-  top: 360px;
-}
-
-/* Кнопки вперед назад ПРИМЕРЫ */
-
-.swiper-button-prev__examples{
-  top: 400px;
-}
-
-.swiper-button-next__examples {
-  top: 400px;
-}
-
-/* Кнопки вперед назад ОТЗЫВЫ */
-
-.swiper-button-prev__reveiws {
-  top: 340px;
-}
-
-.swiper-button-next__reveiws {
-  top: 340px;
-}
-
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  color: #621A2E;
-  font-size: 30px;
-}
-
-/* Пагинация (точки) */
-.swiper-pagination {}
-
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-fraction {
-  top: 335px;
-}
-
-.swiper-pagination-bullet {
-  background-color: #C06D84;
-  width: 10px;
-  height: 10px;
-  opacity: .6;
-  border-radius: 6px;
-  border: .5px solid #621A2E;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #621A2E;
-  opacity: 1;
-}
-
-/* ПУЛЬСАЦИЯ */
-
-
-
-
 
 /* Позиционирование */
 /* Блочная модель */

@@ -1,0 +1,84 @@
+/* СЛАЙДЕР */
+
+.swiper {
+  display: flex;
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  /* margin: 10px auto; */
+  border-radius: 6px;
+}
+
+.swiper-wrapper {
+  box-sizing: content-box;
+  margin-bottom: 0px;
+}
+
+.swiper-slide {
+  displat: flex;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Кнопки вперед и назад */
+
+/* Кнопки вперед назад УСЛУГИ */
+
+.swiper-button-prev__services{
+  top: 360px;
+}
+
+.swiper-button-next__services {
+  top: 360px;
+}
+
+/* Кнопки вперед назад ПРИМЕРЫ */
+
+.swiper-button-prev__examples{
+  top: 385px;
+}
+
+.swiper-button-next__examples {
+  top: 385px;
+}
+
+/* Кнопки вперед назад ОТЗЫВЫ */
+
+.swiper-button-prev__reveiws {
+  top: 340px;
+}
+
+.swiper-button-next__reveiws {
+  top: 340px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: #621A2E;
+  font-size: 30px;
+}
+
+/* Пагинация (точки) */
+.swiper-pagination {}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-fraction {
+  top: 335px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #C06D84;
+  width: 10px;
+  height: 10px;
+  opacity: .6;
+  border-radius: 6px;
+  border: .5px solid #621A2E;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #621A2E;
+  opacity: 1;
+}
