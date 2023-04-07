@@ -1,5 +1,5 @@
 var menushow = document.querySelector(".main-nav__toggle");
-var menuclick = document.querySelector(".main-nav__list");
+var menuclick = document.querySelector(".main-nav");
 var popup = document.querySelector(".main-nav");
 var body = document.querySelector(".page__body");
 
