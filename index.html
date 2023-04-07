@@ -229,33 +229,33 @@
         всего на 5 вопросов</h2>
         <p class="text-center">Это интересно и бесплатно!</p>
 
-        <form class="quiz__form" method="get" action="">
+        <form class="quiz__form" id="tg-quiz">
           <fieldset>
             <legend>Вопрос 1</legend>
             <p>Что планируете сделать?</p>
             <ul class="checkbox__list">
               <li class="checkbox__item">
-                <input type="checkbox" name="makeup" id="filter-makeup" class="checkbox__input">
+                <input type="checkbox" name="services" value="Макияж" id="filter-makeup" class="checkbox__input">
                 <label for="filter-makeup" class="checkbox__label"><span>Макияж</span></label>
               </li>
               <li class="checkbox__item">
-                <input type="checkbox" name="browfix" id="filter-browfix" class="checkbox__input">
+                <input type="checkbox" name="services" value="олговременная укладка бровей" id="filter-browfix" class="checkbox__input">
                 <label for="filter-browfix" class="checkbox__label"><span>Долговременная укладка бровей</span></label>
               </li>
               <li class="checkbox__item">
-                <input type="checkbox" name="browcorrection" id="filter-browcorrection" class="checkbox__input">
+                <input type="checkbox" name="services" value="Коррекция бровей" id="filter-browcorrection" class="checkbox__input">
                 <label for="filter-browcorrection" class="checkbox__label"><spa>Коррекция бровей</spa></label>
               </li>
               <li class="checkbox__item">
-                <input type="checkbox" name="browpaint" id="filter-browpaint" class="checkbox__input">
+                <input type="checkbox" name="services" value="Окрашивание бровей" id="filter-browpaint" class="checkbox__input">
                 <label for="filter-browpaint" class="checkbox__label"><span>Окрашивание бровей</span></label>
               </li>
               <li class="checkbox__item">
-                <input type="checkbox" name="hair" id="filter-hair" class="checkbox__input">
+                <input type="checkbox" name="services" value="Локоны" id="filter-hair" class="checkbox__input">
                 <label for="filter-hair" class="checkbox__label"><span>Локоны</span></label>
               </li>
               <li class="checkbox__item">
-                <input type="checkbox" name="kurs" id="filter-kurs" class="checkbox__input">
+                <input type="checkbox" name="services" value="Курс Визаж для себя" id="filter-kurs" class="checkbox__input">
                 <label for="filter-kurs" class="checkbox__label">Курс “Визаж для себя”<span></span></label>
               </li>
             </ul>
@@ -266,37 +266,37 @@
             <p>К какому мероприятию вы готовитесь?</p>
             <ul class="radio__list">
               <li class="radio__item">
-                <input checked type="radio" name="type-event" value="birthday" id="filter-birthday" class="radio__input">
+                <input checked type="radio" name="type_event" value="День рождения" id="filter-birthday" class="radio__input">
                 <label for="filter-birthday" class="radio__label">
                 <span>День рождения</span>
                 </label>
               </li>
               <li class="radio__item">
-                <input type="radio" name="type-event" value="mary" id="filter-mary" class="radio__input">
+                <input type="radio" name="type_event" value="Свадьба" id="filter-mary" class="radio__input">
                 <label for="filter-mary"  class="radio__label">
                 <span>Свадьба</span>
                 </label>
               </li>
               <li class="radio__item">
-                <input type="radio" name="type-event" value="corporative" id="filter-corporative" class="radio__input" >
+                <input type="radio" name="type_event" value="Корпоратив" id="filter-corporative" class="radio__input" >
                 <label for="filter-corporative"  class="radio__label">
                 <span>Корпоратив</span>
                 </label>
               </li>
               <li class="radio__item">
-                <input type="radio" name="type-event" value="foto" id="filter-foto" class="radio__input" >
+                <input type="radio" name="type_event" value="Фотосессия" id="filter-foto" class="radio__input" >
                 <label for="filter-foto"  class="radio__label">
                 <span>Фотосессия</span>
                 </label>
               </li>
               <li class="radio__item">
-                <input type="radio" name="type-event" value="talking" id="filter-talking" class="radio__input" >
+                <input type="radio" name="type_event" value="Собеседование" id="filter-talking" class="radio__input" >
                 <label for="filter-talking"  class="radio__label">
                 <sap>Собеседование</sap>
                 </label>
               </li>
               <li class="radio__item">
-                <input type="radio" name="type-event" value="another" id="filter-another" class="radio__input" >
+                <input type="radio" name="type_event" value="Другое" id="filter-another" class="radio__input" >
                 <label for="filter-another"  class="radio__label">
                 <span>Другое</span>
                 </label>
@@ -400,8 +400,8 @@
           </ul>
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev swiper-button-prev__examples"></div>
-          <div class="swiper-button-next swiper-button-next__examples"></div>
+          <!-- <div class="swiper-button-prev swiper-button-prev__examples"></div> -->
+          <!-- <div class="swiper-button-next swiper-button-next__examples"></div> -->
         </div>
         <div class="examples__backimage">
           <img src="img/backgrauonds/1.jpg" width="" height="263" alt="">
@@ -470,7 +470,7 @@
 
       <section class="ask-questions">
         <h2 class="text-uppercase text-red text-underline text-low">Задайте свой вопрос:</h2>
-        <form class="ask-questions__form" method="post" action="">
+        <form class="ask-questions__form" id="tg-ask-questions">
           <p>
             <label class="visually-hidden" for="user-name">Имя</label>
             <input class="ask-questions__name" id="user-name" type="text" name="name" placeholder="Имя">
@@ -613,7 +613,7 @@
         <h3 class="request__description">
           В какое время вам позвонить?
         </h3>
-        <form class="request__form" id="tg">
+        <form class="request__form" id="tg-consultation">
           <p>
             <label class="visually-hidden" for="user-time">Время</label>
             <input class="request__time" id="user-time" type="time" name="time" value="15:00">
@@ -748,52 +748,12 @@
       </div>
     </footer>
 
-<!-- МОДАЛЬНОЕ ОКНО РАСКРЫТЫЙ БУРГЕР -->
-
-    <!-- <section class="modal modal__smart-nav"> -->
-      <!-- <div class="nav-header__wrapper"> -->
-        <!-- <a class="page-header__logo"> -->
-          <!-- <img src="img/logo.png" width="136" height="44" alt="Логотип Визажист Цыбина Кристина Чита"> -->
-        <!-- </a> -->
-        <!-- <a class="smart-nav__toggle " href=""> -->
-          <!-- <div class="toggle-cross"></div> -->
-        <!-- </a> -->
-        <!-- <nav class="smart-nav nav__modal"> -->
-          <!-- <div class="smart-nav__wrapper"> -->
-            <!-- <ul class="smart-nav__list smart-list"> -->
-              <!-- <li class="smart-list__item smart-list__item--active"> -->
-                <!-- <a href="#main">Главная</a> -->
-              <!-- </li> -->
-              <!-- <li class="smart-list__item smart-list__item--active"> -->
-                <!-- <a href="#services">Услуги</a> -->
-              <!-- </li> -->
-              <!-- <li class="smart-list__item smart-list__item--active"> -->
-                <!-- <a href="#Portfolio">Портфолио</a> -->
-              <!-- </li> -->
-              <!-- <li class="smart-list__item smart-list__item--active"> -->
-                <!-- <a href="#questions">Вопрос-Ответ</a> -->
-              <!-- </li> -->
-              <!-- <li class="smart-list__item smart-list__item--active"> -->
-                <!-- <a href="#reserve">Запись</a> -->
-              <!-- </li> -->
-              <!-- <li class="smart-list__item smart-list__item--active"> -->
-                <!-- <a href="#reviews">Отзывы</a> -->
-              <!-- </li> -->
-              <!-- <li class="smart-list__item smart-list__item--active"> -->
-                <!-- <a href="#contacts">Контакты</a> -->
-              <!-- </li> -->
-            <!-- </ul> -->
-          <!-- </div> -->
-        <!-- </nav> -->
-      <!-- </div> -->
-    <!-- </section> -->
-
-
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/index.js"></script>
+    <!-- <script src="js/index.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="js/tg-message.js"></script>
-    <script src="js/index.js"></script>
-     <script src="js/toggle.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/toggle.js"></script>
+
 	</body>
 </html>
