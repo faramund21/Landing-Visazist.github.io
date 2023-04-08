@@ -83,7 +83,7 @@ document.getElementById('tg-quiz').addEventListener('submit', function(e) {
   for (var index = 0; index < checkboxes.length; index++) {
      if (checkboxes[index].checked) {
         checkboxesChecked.push(checkboxes[index].value); // положим в массив выбранный
-        alert(checkboxes[index].value); // делайте что нужно - это для наглядности
+        // alert(checkboxes[index].value); // делайте что нужно - это для наглядности
      }
   }
 
