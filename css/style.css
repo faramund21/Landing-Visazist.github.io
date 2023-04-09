@@ -20,6 +20,18 @@ html, body {
   overflow-x: hidden;
 }
 
+/* Плавная прокрутка */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Отступ сверху при прокручивании */
+
+:target {
+  scroll-margin-top: 5em;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="ratio"].visually-hidden {
@@ -169,8 +181,7 @@ form textarea:focus {
   font-weight: 700;
   text-decoration-line: underline;
   text-transform: uppercase;
-  text-align: left;
-  line-height: 0;
+  text-align: center;
 }
 
 .services__price {
@@ -178,8 +189,8 @@ form textarea:focus {
   font-weight: 700;
   text-decoration-line: underline;
   text-transform: uppercase;
-  text-align: right;
-  line-height: 0;
+  text-align: center;
+  line-height: 130%;
 }
 
 .questions-list {
@@ -258,7 +269,7 @@ form textarea:focus {
   width: 100%;
 }
 
-/* Первый экран */
+/* ПЕРВЫЙ ЭКРАН */
 
 .first-screen {
   display: flex;
@@ -268,9 +279,15 @@ form textarea:focus {
   margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px;
+  padding-top: 120px;
 
   width: 320px;
+}
+
+@media (max-width: 767px) {
+  .first-screen{
+    padding-top: 70px;
+  }
 }
 
 .first-screen__offer {
@@ -329,7 +346,7 @@ form textarea:focus {
 
 }
 
-/* Вопросы квиза */
+/* КВИЗ */
 
 .quiz {
   display: flex;
@@ -465,7 +482,7 @@ form textarea:focus {
   font-size:12px;
 }
 
-/* Мои услуги */
+/* УСЛУГИ */
 
 .services {
   display: flex;
@@ -501,9 +518,9 @@ form textarea:focus {
   flex-wrap: wrap;
   max-width: 250px;
   margin: 10px auto;
-  text-align: center;
   font-size: 18px;
   line-height: 20px;
+  justify-content: center;
 }
 
 .services__time,
@@ -530,7 +547,7 @@ form textarea:focus {
   opacity: 0.3;
 }
 
-/* Примеры работ */
+/* ПОРТФОЛИО */
 
 .examples {
   display: flex;
@@ -571,8 +588,6 @@ form textarea:focus {
 /* ВОПРОСЫ И ОТВЕТЫ */
 
 /* НАЧАЛО АНИМАЦИИ */
-
-/* http://daneden.me/animate/ */
 
 @keyframes fadeInDown {
     0% {
@@ -664,7 +679,7 @@ details summary::-webkit-details-marker {
   display:none;
 }
 
-/* Задайте свой вопрос */
+/* ЗАДАЙТЕ СВОЙ ВОПРОС */
 
 .ask-questions {
   display: flex;
@@ -711,7 +726,7 @@ textarea.ask-questions__question {
   opacity: 0.3;
 }
 
-/* Ватсап рука */
+/* ВАТСАП РУКА */
 
 .whatsapp-hand {
   display: flex;
@@ -743,7 +758,7 @@ textarea.ask-questions__question {
   opacity: 0.3;
 }
 
-/* Отзывы */
+/* ОТЗЫВЫ */
 
 .reviews {
   display: flex;
@@ -770,7 +785,7 @@ textarea.ask-questions__question {
   opacity: 0.3;
 }
 
-/* Консультация */
+/* КОНСУЛЬТАЦИЯ */
 
 .request {
   display: flex;
@@ -804,7 +819,7 @@ textarea.ask-questions__question {
   opacity: 0.3;
 }
 
-/* footer */
+/* ФУТЕР */
 
 .page-footer__wrapper {
   display: flex;

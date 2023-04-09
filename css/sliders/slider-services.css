@@ -1,0 +1,11 @@
+/* СЛАЙДЕР */
+
+/* Кнопки вперед и назад */
+
+.swiper-button-prev__services{
+  top: 360px;
+}
+
+.swiper-button-next__services {
+  top: 360px;
+}

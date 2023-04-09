@@ -5,14 +5,24 @@ var body = document.querySelector(".page__body");
 
 menushow.addEventListener("click", function(evt) {
 	evt.preventDefault();
-	popup.classList.toggle("active");
+
+  if (popup.classList.contains("active")) {
+		scrollController.enabledScroll ();
+	} else {
+    scrollController.disabledScroll ();
+  }
+
+  popup.classList.toggle("active");
   menushow.classList.toggle("active");
   body.classList.toggle("lock");
 });
 
 menuclick.addEventListener("click", function(evt) {
-	// evt.preventDefault();
-	popup.classList.remove("active");
-  menushow.classList.remove("active");
-  body.classList.remove("lock");
+  popup.classList.toggle("active");
+  menushow.classList.toggle("active");
+  body.classList.toggle("lock");
+
+  scrollController.enabledScroll ();
 });
+
+

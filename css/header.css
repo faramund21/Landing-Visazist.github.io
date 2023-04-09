@@ -185,10 +185,6 @@
 }
 
 @media (max-width: 767px) {
-  body{
-    overflow: hidden;
-  }
-
   .page-header__wrapper,
   .main-nav__wrapper {
     width: 480px;
@@ -262,13 +258,18 @@
   }
 
   .main-nav__list{
-  display: block;
+    display: block;
   }
 
   .site-list li{
     margin: 0 0 20px;
     border-bottom: 2px solid #5A433B;
     padding: 10px;
+  }
+
+  .menu__item{
+    display: flex;
+    width: 100%;
   }
 
   .first-screen {
