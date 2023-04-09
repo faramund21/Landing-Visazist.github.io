@@ -15,7 +15,7 @@
 }
 
 .swiper-slide {
-  display: flex;
+  displat: flex;
 }
 
 .swiper-slide img {
@@ -24,6 +24,36 @@
 }
 
 /* Кнопки вперед и назад */
+
+/* Кнопки вперед назад УСЛУГИ */
+
+.swiper-button-prev__services{
+  top: 360px;
+}
+
+.swiper-button-next__services {
+  top: 360px;
+}
+
+/* Кнопки вперед назад ПРИМЕРЫ */
+
+.swiper-button-prev__examples{
+  top: 385px;
+}
+
+.swiper-button-next__examples {
+  top: 385px;
+}
+
+/* Кнопки вперед назад ОТЗЫВЫ */
+
+.swiper-button-prev__reveiws {
+  top: 340px;
+}
+
+.swiper-button-next__reveiws {
+  top: 340px;
+}
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
