@@ -5,23 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 		<title>Визажист Цыбина Кристина Чита</title>
     <link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
-
     <link rel="stylesheet" href="css/slider.css">
-
-
-
-    <!-- <link rel="stylesheet" href="css/sliders/slider-examples.css"> -->
-
-    <!-- <link rel="stylesheet" href="css/sliders/slider-examples-wrapper.css"> -->
-
+    <link rel="stylesheet" href="css/toggleclose.css">
+    <link rel="stylesheet" href="css/modals.css">
 
 		<link rel="icon" href="img/favicon.png" type="image/png">
   </head>
 
-	<body class="page__body" id="main">
+	<body class="page__body " id="main">
     <header class="page-header">
       <div class="page-header__body">
         <div class="page-header__wrapper">
@@ -39,7 +33,7 @@
 
           <!-- МЕСЕНДЖЕРЫ -->
           <div class="header__mesenger mesenger">
-            <b class="mesenger__title">Задайте вопрос</b>
+            <b class="mesenger__headtitle">Задайте вопрос</b>
             <ul class="mesenger__list">
               <li class="mesenger__item">
                 <a class="mesenger__link mesenger__link--viber" href="viber://chat?number=%2B79143563455">
@@ -233,7 +227,7 @@
         <h2>Оставьте заявку<br>
         за <span class="text-red">15 секунд,</span> ответив<br>
         всего на 5 вопросов</h2>
-        <p class="text-center">Это интересно и бесплатно!</p>
+        <p class="text-center">Это быстро и бесплатно!</p>
 
         <form class="quiz__form" id="tg-quiz">
           <fieldset>
@@ -267,7 +261,42 @@
             </ul>
           </fieldset>
 
-          <fieldset class="">
+          <fieldset class="quiz__question">
+            <legend>Вопрос 1</legend>
+            <p>Что планируете сделать?</p>
+            <ul class="checkbox__list">
+              <li class="checkbox__item">
+                <input type="checkbox" name="services" value="Макияж" id="filter-makeup" class="checkbox__input">
+                <label for="filter-makeup" class="checkbox__label"><span>Макияж</span></label>
+              </li>
+              <li class="checkbox__item">
+                <input type="checkbox" name="services" value="Долговременная укладка бровей" id="filter-browfix" class="checkbox__input">
+                <label for="filter-browfix" class="checkbox__label"><span>Долговременная укладка бровей</span></label>
+              </li>
+              <li class="checkbox__item">
+                <input type="checkbox" name="services" value="Коррекция бровей" id="filter-browcorrection" class="checkbox__input">
+                <label for="filter-browcorrection" class="checkbox__label"><spa>Коррекция бровей</spa></label>
+              </li>
+              <li class="checkbox__item">
+                <input type="checkbox" name="services" value="Окрашивание бровей" id="filter-browpaint" class="checkbox__input">
+                <label for="filter-browpaint" class="checkbox__label"><span>Окрашивание бровей</span></label>
+              </li>
+              <li class="checkbox__item">
+                <input type="checkbox" name="services" value="Локоны" id="filter-hair" class="checkbox__input">
+                <label for="filter-hair" class="checkbox__label"><span>Локоны</span></label>
+              </li>
+              <li class="checkbox__item">
+                <input type="checkbox" name="services" value="Курс Визаж для себя" id="filter-kurs" class="checkbox__input">
+                <label for="filter-kurs" class="checkbox__label">Курс “Визаж для себя”<span></span></label>
+              </li>
+            </ul>
+            <div class="buttons">
+              <button class="button" type="button">Назад</button>
+              <button class="button" type="button">Далее</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="quiz__question">
             <legend>Вопрос 2</legend>
             <p>К какому мероприятию вы готовитесь?</p>
             <ul class="radio__list">
@@ -308,45 +337,66 @@
                 </label>
               </li>
             </ul>
+            <div class="buttons">
+              <button class="button" type="button">Назад</button>
+              <button class="button" type="button">Далее</button>
+            </div>
           </fieldset>
 
-          <fieldset class="appointment-date">
+          <fieldset class="quiz__question appointment-date">
             <legend>Вопрос 3</legend>
-            <p>На какое число назначено мероприятие?</p>
-            <p>
-              <label class="visually-hidden for="appointment-date">Дата</label>
-              <input class="quiz-input" id="appointment-date" type="date" name="date" value="2023-03-23">
-            </p>
+            <div>
+              <p>На какое число назначено мероприятие?</p>
+              <p>
+                <label class="visually-hidden for="appointment-date">Дата</label>
+                <input class="quiz-input" id="appointment-date" type="date" name="date" value="2023-03-23">
+              </p>
+            </div>
+            <div class="buttons">
+              <button class="button" type="button">Назад</button>
+              <button class="button" type="button">Далее</button>
+            </div>
           </fieldset>
 
-          <fieldset class="appointment-time">
+          <fieldset class="quiz__question appointment-time">
             <legend>Вопрос 4</legend>
-            <p>К какому времени надо быть готовой?</p>
-            <p>
-              <label class="visually-hidden for="appointment-time">Время</label>
-              <input class="quiz-input" id="appointment-time" type="time" name="time" value="09:30">
-            </p>
+            <div>
+              <p>К какому времени надо быть готовой?</p>
+              <p>
+                <label class="visually-hidden for="appointment-time">Время</label>
+                <input class="quiz-input" id="appointment-time" type="time" name="time" value="09:30">
+              </p>
+            </div>
+            <div class="buttons">
+              <button class="button" type="button">Назад</button>
+              <button class="button" type="button">Далее</button>
+            </div>
           </fieldset>
 
-          <fieldset class="appointment-data">
+          <fieldset class="quiz__question appointment-data">
             <legend>Вопрос 5</legend>
-            <p>Давайте знакомиться?</p>
-            <p>
-              <label class="visually-hidden for="appointment-name">Имя</label>
-              <input class="quiz-input" id="appointment-name" type="text" name="name" placeholder="Имя">
-            </p>
-            <p>
-              <label class="visually-hidden for="appointment-phone">Телефон</label>
-              <input class="quiz-input" id="appointment-phone" type="tel" name="phone" placeholder="+7 123 4567890">
-            </p>
-          </fieldset>
-
-          <button class="button" type="submit">Отправить</button>
-          <div class="checkbox__item">
+            <div>
+              <p>Давайте знакомиться?</p>
+              <p>
+                <label class="visually-hidden for="appointment-name">Имя</label>
+                <input class="quiz-input" id="appointment-name" type="text" name="name" placeholder="Имя">
+              </p>
+              <p>
+                <label class="visually-hidden for="appointment-phone">Телефон</label>
+                <input class="quiz-input" id="appointment-phone" type="tel" name="phone" placeholder="+7 123 4567890">
+              </p>
+            </div>
+            <div>
+              <div class="buttons">
+                <button class="button" type="button">Назад</button>
+                <button class="quiz__button button" type="submit">Отправить</button>
+              </div>
+              <div class="quiz__checkbox checkbox__item">
                 <input type="checkbox" checked name="policy-quiz" id="policyagree-quiz" class="checkbox__input checkbox__input--policy">
-                <label for="policyagree-quiz" class="checkbox__label checkbox__label--policy">Я даю свое согласие на обработку персональных данных в соответствии с Условиями.</label>
-
-          </div>
+                <label for="policyagree-quiz" class="checkbox__label checkbox__label--policy"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="">Условиями</a>*</span></label>
+              </div>
+            </div>
+          </fieldset>
         </form>
 
         <button class="button" type="button">Начать</button>
@@ -370,10 +420,6 @@
                   <img src="img/1/4.png" width="60" height="" alt="">
                   <img src="img/1/5.png" width="60" height="" alt="">
                 </div>
-                <h3 class="examples__title">Название работы</h3>
-                <p class="examples__description">
-                  Описание работы - цена - сроки - место выполнения (проведения) можно добавить еще и отзыв клиенты или видеообзор сюда
-                </p>
               </div>
             </li>
             <li class="examples__item swiper-slide">
@@ -385,8 +431,6 @@
                   <img src="img/1/4.png" width="60" height="" alt="">
                   <img src="img/1/5.png" width="60" height="" alt="">
                 </div>
-                <h3 class="examples__title">Название работы</h3>
-                <p class="examples__description">Описание работы - цена - сроки - место выполнения (проведения) можно добавить еще и отзыв клиенты или видеообзор сюда</p>
               </div>
             </li>
             <li class="examples__item swiper-slide">
@@ -398,8 +442,6 @@
                   <img src="img/1/4.png" width="60" height="" alt="">
                   <img src="img/1/5.png" width="60" height="" alt="">
                 </div>
-                <h3 class="examples__title">Название работы</h3>
-                <p class="examples__description">Описание работы - цена - сроки - место выполнения (проведения) можно добавить еще и отзыв клиенты или видеообзор сюда</p>
               </div>
             </li>
           </ul>
@@ -489,8 +531,8 @@
           </div>
           <button class="button" type="submit">Отправить</button>
           <div class="checkbox__item">
-                <input type="checkbox" checked name="policy-ask" id="policyagree-ask" class="checkbox__input">
-                <label for="policyagree-ask" class="checkbox__label checkbox__label--policy">Я даю свое согласие на обработку персональных данных в соответствии с Условиями.<span></span></label>
+            <input type="checkbox" checked name="policy-ask" id="policyagree-ask" class="checkbox__input">
+            <label for="policyagree-ask" class="checkbox__label checkbox__label--policy"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="">Условиями</a>*</span></label>
           </div>
         </form>
         <div class="ask-questions__mesenger mesenger">
@@ -527,19 +569,21 @@
         <h2>Давайте начистоту:</h2>
         <h3 class="whatsapp-hand__description text-center">
           чтобы узнать стоимость<br>и записаться необходимо ответить<br>
-          всего <span class="text-red text-center">на 4 вопроса</span><br><br>
+          всего <span class="text-red text-center">на 5 вопросов</span><br><br>
           Можем  начать с переписки<br>
           в WhatsApp, это <span class="text-red text-uppercase text-center">удобно</span> и <span class="text-red text-uppercase text-center">быстро</span>
         </h3>
         <div class="whatsapp-hand__button">
-          <a class="button button__map" type="button" href="https://wa.me/79143563455">написать в whatsapp</a>
-          <div class="whatsapp-icon">
+          <a class="button button__map" type="button" href="">записаться</a>
+          <a class="whatsapp-icon" href="https://wa.me/79143563455">
             <img src="img/whatsapp.png" width="50" height="50" alt="Я в Ватсап">
-          </div>
+          </a>
         </div>
         <div class="whatsapp-hand__backimage">
           <img src="img/backgrauonds/3.jpeg" width="" height="271" alt="">
         </div>
+
+
 
       </section>
 
@@ -630,10 +674,10 @@
           </p>
           <button class="button" type="submit">Обратный звонок</button>
           <div class="checkbox__item">
-                <input type="checkbox" checked name="policy-request" id="policyagree-request" class="checkbox__input">
-                <label for="policyagree-request" class="checkbox__label checkbox__label--policy">Я даю свое согласие на обработку персональных данных в соответствии с Условиями.<span></span></label>
+            <input type="checkbox" checked name="policy-request" id="policyagree-request" class="checkbox__input">
+            <label for="policyagree-request" class="checkbox__label checkbox__label--policy"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="">Условиями</a>*</span></label>
           </div>
-          <div id="success" style="display: none;"></div>
+          <div id="success" style="display: none;"></div> <!-- ???????????????????? -->
         </form>
         <div class="request__mesenger mesenger">
           <h3 class="mesenger__title">или напишите мне онлайн</h3>
@@ -749,7 +793,47 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <section class="confirmation modal">
+      <a class="toggle__close" href=""><span></span></a>
+      <div class="modal__window">
+        <div class="confirmation modal__image"><span></span></div>
+        <p>Ваша заявка отправлена!</p>
+      </div>
+    </section>
+
+    <section class="unfilled modal">
+      <a class="toggle__close" href=""><span></span></a>
+      <div class="modal__window">
+        <div class="unfilled modal__image"><span></span></div>
+        <p>Есть незаполненные поля!</p>
+      </div>
+    </section>
+
+    <section class="privacypolicy modal">
+      <a class="toggle__close" href=""><span></span></a>
+      <div class="modal__window">
+        <p><span class="text-bold">Политика в отношении обработки персональных данных</span><br><br>
+        1. Общие положения
+        Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. № 152-ФЗ «О персональных данных» (далее — Закон о персональных данных) и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Цыбина Кристина Сергеевна (далее — Оператор).
+        1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.
+        1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее — Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта https://makeupkristina.ru.
+        </p>
+      </div>
+    </section>
+
+    <section class="privacyconditions modal">
+      <a class="toggle__close" href=""><span></span></a>
+      <div class="modal__window">
+        <p><span class="text-bold">Условия</span><br><br>
+        1. Общие положения
+        Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. № 152-ФЗ «О персональных данных» (далее — Закон о персональных данных) и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Цыбина Кристина Сергеевна (далее — Оператор).
+        1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.
+        1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее — Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта https://makeupkristina.ru.
+        </p>
+      </div>
+    </section>
+
+    <script src="js/axios.min.js"></script>
     <script src="js/tg-message.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/toggle.js"></script>

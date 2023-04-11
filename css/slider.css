@@ -33,16 +33,19 @@
 
 .swiper-button-next__services {
   top: 360px;
+
 }
 
 /* Кнопки вперед назад ПРИМЕРЫ */
 
 .swiper-button-prev__examples{
-  top: 385px;
+  top: 390px;
+  left: 100px;
 }
 
 .swiper-button-next__examples {
-  top: 385px;
+  top: 390px;
+  right: 100px;
 }
 
 /* Кнопки вперед назад ОТЗЫВЫ */

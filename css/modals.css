@@ -1,0 +1,66 @@
+/* МОДАЛЬНЫЕ ОКНА */
+
+    .modal {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: end;
+
+      margin-bottom: 25px;
+      margin-top: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 40px;
+      padding-bottom:20px;
+      box-sizing: border-box;
+      width: 320px;
+      min-height:100px;
+
+      background-color: #F7E9ED;
+      border-radius: 6px;
+      box-shadow: 0 2px 2px #2B0D15;
+    }
+
+    .modal__image {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 60px;
+      height: auto;
+
+      margin-right: 10px;
+    }
+
+    .modal__window {
+      display: flex;
+      justify-content: space-around;
+      height: auto;
+    }
+
+    .modal p{
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 130%;
+    }
+
+/* Заявка отправлена */
+
+.modal__image.confirmation{
+  background-image: url(file:///D:/landing-Kristina/source//img/checked.png);
+}
+
+/* Некоторые поля не заполнены */
+
+.modal__image.unfilled{
+  background-image: url(file:///D:/landing-Kristina/source//img/mistake.png);
+}
+
+/* Политика конфиденциальности */
+
+.privacypolicy p,
+.privacyconditions p{
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 100%;
+    }

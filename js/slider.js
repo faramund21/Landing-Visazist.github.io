@@ -23,12 +23,11 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
-
   // Автоматическое перелистование
 
-  // autoplay: {
-    // delay: 2000, // 1с = 1000
-  // },
+  autoplay: {
+    delay: 2000, // 1с = 1000
+  },
 
   // And if we need scrollbar
   // scrollbar: {

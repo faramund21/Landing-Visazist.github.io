@@ -24,5 +24,3 @@ menuclick.addEventListener("click", function(evt) {
 
   scrollController.enabledScroll ();
 });
-
-

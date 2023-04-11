@@ -66,7 +66,7 @@ h2 {
 
 h3 {
   font-size: 16px;
-  line-height: 18px;
+	line-height: 18px;
   font-weight: 700;
 }
 
@@ -170,9 +170,39 @@ form textarea:focus {
   padding: 0;
 }
 
+.quiz__question {
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.appointment-date {
+  background-image: url(file:///D:/landing-Kristina/source//img/calendar.png);
+  background-repeat: no-repeat;
+  min-height: 400px;
+  background-position: bottom;
+}
+
+.appointment-time {
+  background-image: url(file:///D:/landing-Kristina/source//img/clock.png);
+  background-repeat: no-repeat;
+  min-height: 400px;
+  background-position: bottom;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button{
+  width: 140px;
+  height: 40px;
+}
+
 .adventages-list {
   list-style: none;
-
   font-size: 12px;
 }
 
@@ -191,6 +221,12 @@ form textarea:focus {
   text-transform: uppercase;
   text-align: center;
   line-height: 0;
+}
+
+.quiz p{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
 }
 
 .questions-list {
@@ -441,6 +477,11 @@ form textarea:focus {
   cursor: pointer;
 }
 
+.checkbox__label a {
+  color: #A72146;
+  font-weight: 700;
+}
+
 .checkbox__input:checked + .checkbox__label:after {
   transform: scale(1);
 }
@@ -517,7 +558,8 @@ form textarea:focus {
   display: flex;
   flex-wrap: wrap;
   max-width: 250px;
-  margin: 5px auto 0 auto;
+  margin: 10px auto;
+  text-align: center;
   font-size: 18px;
   line-height: 20px;
   justify-content: center;
@@ -525,7 +567,7 @@ form textarea:focus {
 
 .services__time,
 .services__price {
-  margin: 5px auto 10px auto;
+  margin: 10px auto;
   padding: 0;
 }
 
@@ -777,6 +819,10 @@ textarea.ask-questions__question {
   /* border: 1px solid #621A2E; */
 }
 
+.review-slide img {
+  vertical-align: top;
+}
+
 .reviews__backimage {
   position: absolute;
   bottom: -120px;
@@ -819,7 +865,7 @@ textarea.ask-questions__question {
   opacity: 0.3;
 }
 
-/* ФУТЕР */
+/* footer */
 
 .page-footer__wrapper {
   display: flex;
